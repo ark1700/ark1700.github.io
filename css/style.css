@@ -125,6 +125,7 @@ nav .navbar-nav li:hover:after {
 
 .carousel-control {
 	opacity: 0;
+	padding-top: 25%;
 }
 
 .carousel-control.right, 
