@@ -93,6 +93,7 @@ nav .navbar-nav li:hover:after {
 	background: url(img/bg-promo.png);
 	width: 100%;
 	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 #promo .jumbotron{
