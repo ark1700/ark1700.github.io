@@ -1,0 +1,339 @@
+body {
+  font-family: Poppins, sans-serif!important;
+  font-size: 18px;
+  line-height: 24px;
+  color: #777777!important;
+  width: 100%;
+}
+
+nav button span {
+	background-color: #000;
+}
+
+.navbar {
+	margin-bottom: 0 !important;
+	padding: 20px 0;
+}
+
+.navbar-brand{
+	padding: 0 !important;
+}
+
+.navbar-nav li a{
+	color: #777777 !important;
+	text-transform: uppercase;
+	font-weight: bold;
+  	position: relative;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #000 !important;
+  background-color: transparent;
+}
+/*
+nav .navbar-nav li:hover:after {
+	content:'';
+	width: 20px;
+	height: 1px;
+	position: absolute;
+	right: 100%;
+	top: 50%;
+	margin-right: 0px;
+	background-color: #000;
+}
+*/
+
+.navbar-nav button {
+	background-color: rgba(0,0,0,0);
+	border: none;
+	border-radius: 0px;
+	color: #000;
+	height: 100%;
+}
+
+.navbar-nav button span{
+	background-color: transparent;
+	color: #777;
+	font-size: 12px;
+}
+
+.navbar-nav .dropdown-menu {
+	padding: 0 !important;
+}
+
+.navbar-nav button span .form-control {
+	color: #777;
+}
+
+.navbar-nav button:hover{
+	background-color: transparent;
+	color: #000;
+}
+
+.navbar-nav .open button{
+	background-color: #000!important;
+}
+
+.navbar-nav input{
+	border-radius: 0!important;
+
+}
+
+#photo {
+	background-color: #fafafa;
+	padding: 35px 0 70px;
+}
+
+#photo img {
+	margin-bottom: 20px;
+	width:100%;
+}
+
+#promo {
+	background: url(img/bg-promo.png);
+	width: 100%;
+	background-position: center center;
+}
+
+#promo .jumbotron{
+	padding: 260px 0 165px;
+	margin: 0;
+	background-color: rgba(0,0,0,0); 
+}
+
+#promo h1 span {
+	background-color: #000;
+	color: #fff;
+	padding: 5px 40px;
+	text-transform: uppercase;
+	font-size: 48px;
+}
+
+#promo h4{
+	padding: 35px;
+	text-transform: uppercase;
+}
+
+
+.pt20{
+	padding-top: 20px;
+}
+
+.carousel-indicators li{
+	background-color: rgb(255, 255, 255) !important;
+}
+
+.carousel-control {
+	opacity: 0;
+}
+
+.carousel-control.right, 
+.carousel-control.left {
+      background-image: none !important;
+  }
+
+.carousel-indicators .active{
+	background-color: #fff;
+	border: 3px solid #000;
+}
+
+
+#photo .navbar-nav{
+	width: 100%;
+    text-align: center;
+}
+#photo .navbar-nav li{
+	float: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#photo .navbar-nav {
+	border-top: 2px solid #e1e1e1;
+	border-bottom: 2px solid #e1e1e1;
+}
+
+#photo .navbar-nav li:after{
+	content: "/";
+	color: #e1e1e1;
+	font-size: 30px;
+	font-weight: lighter;
+	position: absolute;
+	top: 5px;
+	right: -20px; 
+}
+
+#photo .navbar-nav li:last-child:after{
+	content: "";
+}
+
+#photo button{
+	color: #fff;
+	background-color: #777;
+	margin-top: 20px;
+	width:125px;
+}
+
+#photo button:hover{
+	background-color: #000;
+}
+
+footer img {padding: 50px 0 30px;}
+
+footer .fa{ 
+	font-size: 18px;
+	color:#777777;
+	padding: 35px 25px;
+}
+
+footer .fa:hover{
+	color: #000;
+}
+
+footer .copy p{
+	color: #777;
+	margin-bottom: 45px;
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+
+footer .copy p a{
+	color: #000;
+}
+
+footer .row {
+	border-bottom: 1px solid #ebebeb;
+}
+
+
+
+/* --About-- */
+
+#promo-about {
+	background-color: #f0f0f2;
+	position: relative;
+	height: 350px;
+	padding: 115px 122px;
+	background: url('../../img/about/promo.png');
+	background-position: right center;
+	background-repeat: no-repeat;
+
+
+}
+
+#promo-about h1 span {
+	background-color: #000;
+	color: #fff;
+	padding: 4px 40px;
+	text-transform: uppercase;
+	font-size: 48px;
+	font-weight: 300;
+	margin-bottom: 44px;	
+}
+
+#promo-about p {
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #000;
+	z-index: 2;
+	margin-top: 44px;
+	letter-spacing: 8px;
+}
+
+#about-team{
+	margin-top: 71px;
+	margin-bottom: 100px;
+	background-color: #fafafa;	
+}
+
+#about-team h4 {
+	color: #000;
+	letter-spacing: 8px;
+}
+
+#about-team h4{
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+#about-team p {
+	line-height: 26px;
+	font-size: 12px;
+}
+
+#about-team .skills h4{
+	margin-top: 40px;
+}
+
+#about-team .skills h5{
+	color: #000;
+	font-weight: 700;
+}
+
+#about-team .skills .skill-item {
+	
+}
+
+#about-team .skills .bar{
+	height: 2px;
+	width: 100%;
+	background-color: #ebebeb;
+	border: 3px solid #ebebeb;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+#about-team .skills .photoshop-skroll {
+	position: absolute;
+	color: #000;
+	height: 2px;
+	width: 90%;
+	bottom: 1px;
+	left: 1px;
+}
+
+#about-team .team-img img {
+	width: 535px;
+}
+
+#about-members .title {
+	text-align: center;
+}
+
+#about-members .title h1 {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 30px;
+	color: #000;
+	z-index: 2;
+	margin-top: 44px;
+	letter-spacing: 8px;
+}
+
+#about-members .title p {
+	display: inline-block;
+	width: 50%;
+	margin-top: 25px;
+	margin-bottom: 67px;
+	line-height: 32px;
+	font-size: 12px;
+}
+
+#about-members .member-object img {
+	padding: 11px 45px 0;
+	background-color: #eee;
+
+}
+
+#about-members .member-object h2 {
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 23px;
+
+}
+
+#about-members .member-object h3 {
+	margin-top: 10px;
+	font-size: 16px;
+}
