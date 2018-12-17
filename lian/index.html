@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>LIAN</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
+    <!-- Font awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <!-- Latest compiled and minified CSS -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+    <link rel="stylesheet" href="css/style.css">
     
   </head>
 
@@ -27,11 +29,11 @@
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
               <li><a class="active" href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a class="disabled" href="#portfolio">Portfolio</a></li>
-              <li><a class="disabled" href="#blog">Blog</a></li>
-              <li><a class="disabled" href="#contact">Contact</a></li>
-              <li><a class="disabled" href="#" class="glyphicon glyphicon-search"></a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
             </ul>
           </div>
         </div>
@@ -39,33 +41,26 @@
     </header>
        
     <section id="promo">
-      <div class="container">
+      <div>
+
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
           </ol>
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
 
-            <div class="item active">
+            <div class="item item-1 active">
               <div class="jumbotron text-center">
                 <h1><span>Lian Creative Agency</span></h1>
                 <h4><span>Minimal Freelance Portfolio</span></h4>
               </div>
             </div>
-
-            <div class="item">
-              <div class="jumbotron text-center">
-                <h1><span>We make the complex, simple</span></h1>
-                <h4><span>A design agency built to build modern brands</span></h4>
-              </div>
-            </div>
           
-            <div class="item">
+            <div class="item item-2">
               <div class="jumbotron text-center">
                 <h1><span>At the center of everything we make</span></h1>
                 <h4><span>These brands aren’t trophies, they’re friends we’ve met on our journey</span></h4>
@@ -101,22 +96,32 @@
             <li><a href="#">Branding</a></li>
           </ul>
         </div>
-        <div class="row pt20">
+        <div class="row photos pt20">
           <div class="col-sm-4">
-            <img src="img/photo-1.jpg" class="img-responsive" alt="">
-            <img src="img/photo-2.jpg" class="img-responsive" alt="">
-            <img src="img/photo-3.jpg" alt="">
+            <a href="#">
+              <img src="img/photo-1.jpg" class="img-responsive" alt=""></a>
+            <a href="#">
+              <img src="img/photo-2.jpg" class="img-responsive" alt=""></a>
+            <a href="#">
+              <img src="img/photo-3.jpg" class="img-responsive" alt=""></a>
           </div>
           <div class="col-sm-4">
-            <img src="img/photo-4.jpg" class="img-responsive" alt="">
-            <img src="img/photo-5.jpg" class="img-responsive" alt="">
-            <img src="img/photo-6.jpg" class="img-responsive"  alt="">
-            <img src="img/photo-7.jpg" class="img-responsive"  alt="">
+            <a href="#">
+              <img src="img/photo-4.jpg" class="img-responsive" alt=""></a>
+            <a href="#">
+              <img src="img/photo-5.jpg" class="img-responsive" alt=""></a>
+            <a href="#">
+              <img src="img/photo-6.jpg" class="img-responsive"  alt=""></a>
+            <a href="#">
+              <img src="img/photo-7.jpg" class="img-responsive"  alt=""></a>
           </div>
           <div class="col-sm-4">
-            <img src="img/photo-8.jpg" class="img-responsive"  alt="">
-            <img src="img/photo-9.jpg" class="img-responsive"  alt="">
-            <img src="img/photo-10.jpg" class="img-responsive"  alt="">
+            <a href="#">
+              <img src="img/photo-8.jpg" class="img-responsive"  alt=""></a>
+            <a href="#">
+              <img src="img/photo-9.jpg" class="img-responsive"  alt=""></a>
+            <a href="#">
+              <img src="img/photo-10.jpg" class="img-responsive"  alt=""></a>
           </div>
         </div>
         <div class=" row text-center">
@@ -147,5 +152,6 @@
     
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
   </body>
 </html>

@@ -1,6 +1,6 @@
 body {
   font-family: Poppins, sans-serif!important;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
   color: #777777!important;
   width: 100%;
@@ -10,38 +10,58 @@ nav button span {
 	background-color: #000;
 }
 
+
 .navbar {
 	margin-bottom: 0 !important;
-	padding: 20px 0;
+	padding: 17px 0;
+	box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.15);
 }
 
 .navbar-brand{
 	padding: 0 !important;
 }
 
+.navbar-nav li {
+	margin-right: 20px;
+}
+
+
 .navbar-nav li a{
 	color: #777777 !important;
 	text-transform: uppercase;
 	font-weight: bold;
   	position: relative;
+  	-webkit-transition: all 0.2s;
 }
+
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
   color: #000 !important;
   background-color: transparent;
 }
-/*
-nav .navbar-nav li:hover:after {
-	content:'';
-	width: 20px;
-	height: 1px;
+
+header .navbar-nav li a:before {
+	content: '';
 	position: absolute;
 	right: 100%;
-	top: 50%;
-	margin-right: 0px;
+	top: 7px;
+	margin-right: -11px;
+	height: 1px;
+	width: 20px;
 	background-color: #000;
+	-webkit-transform: translateY(18px) scale(0);
+    transform: translateY(18px) scale(0);
+    -webkit-transition: all 0.2s;
 }
-*/
+
+header .navbar-nav li:last-child a:before{
+	display: none;
+}
+
+header .navbar-nav li a:hover::before{
+	-webkit-transform: translateY(18px) scale(1);
+    transform: translateY(18px) scale(1);
+}
 
 .navbar-nav button {
 	background-color: rgba(0,0,0,0);
@@ -90,7 +110,7 @@ nav .navbar-nav li:hover:after {
 }
 
 #promo {
-	background: url(img/bg-promo.png);
+	/*background: url("../img/bg-promo.jpg");*/
 	width: 100%;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -105,19 +125,41 @@ nav .navbar-nav li:hover:after {
 #promo h1 span {
 	background-color: #000;
 	color: #fff;
-	padding: 5px 40px;
+	padding: 0px 40px;
 	text-transform: uppercase;
-	font-size: 48px;
+	font-size: 42px;
+	font-weight: 200;
+	letter-spacing: 3px;
 }
-
 #promo h4{
 	padding: 35px;
 	text-transform: uppercase;
+	color: #000;
+	font-weight: 300;
+	letter-spacing: 5px;
 }
 
 
 .pt20{
 	padding-top: 20px;
+}
+
+.carousel {
+	position: relative;
+}
+
+.carousel-inner .item-1{
+	background-image: url("../img/bg-promo.jpg") !important;
+	width: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.carousel-inner .item-2{
+	background-image: url("../img/bg-promo2.jpg") !important;
+	width: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 .carousel-indicators li{
@@ -126,13 +168,41 @@ nav .navbar-nav li:hover:after {
 
 .carousel-control {
 	opacity: 0;
-	padding-top: 25%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
 }
 
 .carousel-control.right, 
 .carousel-control.left {
       background-image: none !important;
-  }
+}
+
+.carousel-control .glyphicon {
+	width: 42px;
+	height: 42px;
+	line-height: 42px;	
+	border-radius: 50%;
+	border: 1px solid #fff;
+}
+
+.carousel-control:hover .glyphicon{
+	background-color: #000;
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 50%;
+	border: none;
+	color: #fff;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s; 
+}
 
 .carousel-indicators .active{
 	background-color: #fff;
@@ -161,7 +231,7 @@ nav .navbar-nav li:hover:after {
 	font-size: 30px;
 	font-weight: lighter;
 	position: absolute;
-	top: 5px;
+	top: 29%;
 	right: -20px; 
 }
 
@@ -169,11 +239,46 @@ nav .navbar-nav li:hover:after {
 	content: "";
 }
 
+#photo .photos a{
+	display: block;
+	position: relative;
+}
+#photo .photos a:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+	opacity: 0; 
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s; 
+}
+
+#photo .photos a:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url("../img/hover-icon.png") center no-repeat;
+	opacity: 0; 
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s; 
+}
+
+#photo .photos a:hover:before,
+#photo .photos a:hover:after { opacity: 1; }
+
+
 #photo button{
 	color: #fff;
 	background-color: #777;
 	margin-top: 20px;
 	width:125px;
+	-webkit-transition: all 0.2s;
 }
 
 #photo button:hover{
