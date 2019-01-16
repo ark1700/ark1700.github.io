@@ -716,7 +716,7 @@ footer p {
     border-right: 170px solid transparent;
   }
   #download .item {
-    padding-left: 80px;
+    padding-left: 75px;
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -727,8 +727,8 @@ footer p {
     font-size: 14px;
   }
   #download .item i {
-    width: 70px;
-    line-height: 70px;
+    width: 79px;
+    line-height: 85px;
   }
 }
 
