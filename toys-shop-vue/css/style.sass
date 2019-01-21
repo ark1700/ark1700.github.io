@@ -1,0 +1,267 @@
+body
+	font-family: 'Sunflower', sans-serif
+	ul
+		padding-left: 0
+#home
+	ul
+		list-style: none
+		padding: 0
+		margin: 0
+	li
+		display: inline-block
+	.nav-item a
+		color: #000
+		font-size: 20px
+		margin: 0 10px
+	.header-bar 
+		position: absolute
+		width: 100%
+		z-index: 99
+	.info-top-grid, nav.navbar.navbar-expand-lg.navbar-light 
+		background: rgba(255, 255, 255, 0.7)
+	.info-top-grid
+		padding: 10px 30px
+		span 
+			padding: 0 10px
+			&:before
+				margin-right: 5px
+		a
+			color: #000
+			&:before
+				margin-right: 5px
+	.info-contact span
+		font-family: 'Sunflower', sans-serif
+	.hedder-up
+		background: #000
+		color: #fff
+	.right-side-cart
+		vertical-align: center
+	.cart-icons li
+		width: 40px
+		height: 40px
+		font-size: 24px
+		line-height: 40px
+		border: 1px solid #fff
+		border-radius: 5px
+		margin: 10px
+		transition: all 0.5s
+		&:hover
+			color: #000
+			background-color: #fff
+
+	.navbar-brand
+		font-size: 40px
+	.search-right form button
+		border: 1px solid #fff
+		color: #fff
+		&:hover
+			color: #000
+			background-color: #fff
+.inner_page-banner		
+	text-align: center
+	background: url('../img/b2.jpg') no-repeat center
+	background-size: cover
+	height: 350px	
+
+#product
+	padding-top: 30px
+	.list-group-item
+		cursor: pointer
+	.VueCarousel
+		width: 500px
+		img
+			width: 450px
+			min-height: 530px
+			margin-left: 10px
+	.item-price 
+		span
+			padding: 0 10px
+			font-size: 28px
+			color: red
+		del
+			color: grey
+			padding-right: 10px
+	.modal
+		display: block
+	.modal-header
+  	border-bottom: none
+	.modal-body
+		padding-top: 0
+	.modal-dialog
+		margin: 5vh auto
+	#app 
+		width: 760px
+		margin: 20px auto
+		#list 
+			padding-bottom: 10px
+			.box 
+				width: 230px
+				background-color: #fff
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
+				display: inline-block
+				margin: 0 10px
+				position: relative
+				img 
+					width: 230px
+				i 
+					width: 50px
+					height: 50px
+					background: #ED277F
+					color: #ffffff
+					border-radius: 25px
+					text-align: center
+					line-height: 50px
+					font-size: 1.4rem
+					position: absolute
+					right: 20px
+					bottom: 120px
+					box-shadow: 0 0 4px 2px rgba(80, 80, 80, 0.1)
+					cursor: pointer
+					transition: all 0.3s
+					&:hover 
+						transform: scale(1.05)
+					
+				
+				h2 
+					margin-left: 20px
+				
+				p 
+					margin-left: 20px
+				
+			
+		
+		#cart 
+			// margin-top: 50px
+			overflow: hidden
+			#head 
+				width: 100%
+				border-bottom: 1px solid #BFBFBF
+				height: 40px
+				display: block
+				h3 
+					display: inline-block
+					line-height: 40px
+					margin: 0
+				
+				#price 
+					display: inline-block
+					color: #777777
+					margin-left: 95px
+					line-height: 40px
+				
+				#quantity 
+					display: inline-block
+					color: #777777
+					margin-left: 100px
+					line-height: 40px
+				
+				#total 
+					display: inline-block
+					color: #777777
+					line-height: 40px
+					float: right
+				
+			
+			.row 
+				width: 100%
+				border-bottom: 1px solid #BFBFBF
+				overflow: hidden
+				padding: 10px 0
+				display: block
+				flaot: left
+				img 
+					height: 1.5rem
+					float: left
+				
+				h4 
+					float: left
+					margin: 0
+					line-height: 1.5rem
+					margin-left: 20px
+					width: 200px
+					font-size: 18px
+				
+				p 
+					float: left
+					margin: 0
+					width: 80px
+					line-height: 1.5rem
+					margin-left: 35px
+					text-align: center
+				
+				.qty-minus 
+					float: left
+					width: 20px
+					line-height: 1.5rem
+					margin-left: 60px
+					text-align: center
+					cursor: pointer
+				
+				.qty 
+					float: left
+					width: 20px
+					line-height: 1.5rem
+					margin-left: 20px
+					text-align: center
+				
+				.qty-plus 
+					float: left
+					width: 20px
+					line-height: 1.5rem
+					margin-left: 20px
+					text-align: center
+					cursor: pointer
+				
+				.del 
+					float: left
+					width: 80px
+					line-height: 1.5rem
+					margin-left: 60px
+					cursor: pointer
+					text-decoration: underline
+					color: #ED277F
+				
+				.totalprice 
+					float: left
+					width: 80px
+					line-height: 1.5rem
+					margin-left: 10px
+					text-align: right
+				
+				.row p::before, .box p::before, .totalprice::before 
+					content: "$"
+				
+			h5 
+				font-size: 1.2rem
+				text-align : right
+    
+  
+
+
+	.tab
+		padding: 20px 0
+
+#contacts
+	background-color: yellow
+	.address
+		vertical-align: center
+	span
+		color: red
+		font-size: 26px
+
+footer
+	background-color: #000
+	color: #fff
+
+@import "media"
+
+// animation
+
+.modal-enter-active, .phone-leave-active,
+	transition: all .5s
+.modal-enter, .modal-leave-to
+	transform: translateY(-100px)
+	opacity: 0
+
+
+
