@@ -1,5 +1,5 @@
 const toy = (name, price, batteries, material, color, weight, package, image1, image2, image3, discr, quantity, id) => ({name, price, batteries, material, color, weight, package, image1, image2, image3, discr, quantity, id})
-var qty = [0, 0, 0];
+var qty = [0, 0, 0, 0];
 
 
 const toys = [
