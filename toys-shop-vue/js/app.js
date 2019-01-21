@@ -1,10 +1,11 @@
-const toy = (name, price, batteries, material, color, weight, package, image1, image2, image3, discr, quantity) => ({name, price, batteries, material, color, weight, package, image1, image2, image3, discr, quantity})
+const toy = (name, price, batteries, material, color, weight, package, image1, image2, image3, discr, quantity, id) => ({name, price, batteries, material, color, weight, package, image1, image2, image3, discr, quantity, id})
+var qty = [0, 0, 0];
 
 
 const toys = [
-  toy('Soft Teddy Bear', '650', 'Included', 'Cotton', 'brown', '798', '12 x 10 x 10', 'img/toy-1/f1.jpg', 'img/toy-1/f2.jpg', 'img/toy-1/f3.jpg', 'Teddy bears are a timeless way to share love with every hug!', 0),
-  toy('LEGO Technic Cherry Picker', '10', 'Not needed', 'Plastic', ' ', '470', '15 x 15 x 9', 'img/toy-2/f1.png', 'img/toy-2/f2.png', 'img/toy-2/f3.png', 'Force and movement with this cool LEGO Technic', 0),
-  toy('Water Pistol', '4', 'Not needed', 'Plastic', 'blue/red/yellow', '470', '15 x 15 x 9', 'img/toy-3/f1.jpg', 'img/toy-3/f1.jpg', 'img/toy-3/f1.jpg', 'Water guns sports a variety of bright neon colors. Great for outdoor activities.', 0)
+  toy('Soft Teddy Bear', '650', 'Included', 'Cotton', 'brown', '798', '12 x 10 x 10', 'img/toy-1/f1.jpg', 'img/toy-1/f2.jpg', 'img/toy-1/f3.jpg', 'Teddy bears are a timeless way to share love with every hug!', 0, 1),
+  toy('LEGO Technic Cherry Picker', '10', 'Not needed', 'Plastic', ' ', '470', '15 x 15 x 9', 'img/toy-2/f1.png', 'img/toy-2/f2.png', 'img/toy-2/f3.png', 'Force and movement with this cool LEGO Technic', 0, 2),
+  toy('Water Pistol', '4', 'Not needed', 'Plastic', 'blue/red/yellow', '470', '15 x 15 x 9', 'img/toy-3/f1.jpg', 'img/toy-3/f1.jpg', 'img/toy-3/f1.jpg', 'Water guns sports a variety of bright neon colors. Great for outdoor activities.', 0, 3)
       ]
 
 Vue.component('tab-discription', {
@@ -22,8 +23,8 @@ Vue.component("item", {
   props: ["item_data", "buyitems"],
   methods: {
     addItem: function (item_data) {
-      item_data.quantity += 1;
-      if (item_data.quantity <= 1) {
+      qty[item_data.id] += 1;
+      if (qty[item_data.id] <= 1) {
         this.pushData();
       } else {
         var i = this.findIndex(this.$parent.buyitems, "id", item_data.name);
@@ -60,6 +61,7 @@ Vue.component("buyitem", {
     removeItem: function (buy_data) {
       var index = this.$parent.buyitems.indexOf(buy_data);
       this.$parent.buyitems.splice(index, 1);
+      qty[buy_data.id] = 0;
     },
     plusQty: function (buy_data) {
       buy_data.qty += 1;
