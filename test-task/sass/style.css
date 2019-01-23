@@ -1,8 +1,8 @@
 @font-face {
   font-family: "BIP";
-  src: url("../fonts/");
+  src: url("../test-task/fonts/");
   /* IE9*/
-  src: url("../fonts/?#iefix") format("embedded-opentype"), url("../fonts/c56113ae65c1145efec57a93ed91f60b.woff2") format("woff2"), url("../fonts/c56113ae65c1145efec57a93ed91f60b.woff") format("woff"), url("../fonts/c56113ae65c1145efec57a93ed91f60b.ttf") format("truetype"), url("../fonts/c56113ae65c1145efec57a93ed91f60b.svg#BIP") format("svg");
+  src: url("../test-task/fonts/?#iefix") format("embedded-opentype"), url("../test-task/fonts/c56113ae65c1145efec57a93ed91f60b.woff2") format("woff2"), url("../test-task/fonts/c56113ae65c1145efec57a93ed91f60b.woff") format("woff"), url("../test-task/fonts/c56113ae65c1145efec57a93ed91f60b.ttf") format("truetype"), url("../test-task/fonts/c56113ae65c1145efec57a93ed91f60b.svg#BIP") format("svg");
   /* iOS 4.1- */
 }
 
