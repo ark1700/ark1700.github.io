@@ -2,7 +2,7 @@ body {
   font-family: Poppins, sans-serif!important;
   font-size: 14px;
   line-height: 24px;
-  color: #777777!important;
+  color: #fafafa !important;
   width: 100%;
 }
 
@@ -36,8 +36,12 @@ nav button span {
 
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-  color: #000 !important;
-  background-color: transparent;
+  color: #000000 !important;
+  background-color: transparent!important;
+}
+
+header {
+	background: #ffffff;
 }
 
 header .navbar-nav li a:before {
@@ -48,7 +52,7 @@ header .navbar-nav li a:before {
 	margin-right: -11px;
 	height: 1px;
 	width: 20px;
-	background-color: #000;
+	background-color: #000000;
 	-webkit-transform: translateY(18px) scale(0);
     transform: translateY(18px) scale(0);
     -webkit-transition: all 0.2s;
@@ -67,7 +71,7 @@ header .navbar-nav li a:hover::before{
 	background-color: rgba(0,0,0,0);
 	border: none;
 	border-radius: 0px;
-	color: #000;
+	color: #000000;
 	height: 100%;
 }
 
@@ -285,12 +289,17 @@ header .navbar-nav li a:hover::before{
 	background-color: #000;
 }
 
-footer img {padding: 50px 0 30px;}
+footer {
+	background-color: #fff;
+	box-shadow: 0 -3px 5px 1px rgba(163, 163, 163, 0.1);
+}
+
+footer img {padding: 60px 0 41px;}
 
 footer .fa{ 
 	font-size: 18px;
 	color:#777777;
-	padding: 35px 25px;
+	padding: 23px 25px;
 }
 
 footer .fa:hover{
@@ -302,10 +311,11 @@ footer .copy p{
 	margin-bottom: 45px;
 	margin-top: 30px;
 	text-transform: uppercase;
+	font-weight: 400;
 }
 
 footer .copy p a{
-	color: #000;
+	color: #000000;
 }
 
 footer .row {
@@ -319,9 +329,8 @@ footer .row {
 #promo-about {
 	background-color: #f0f0f2;
 	position: relative;
-	height: 350px;
-	padding: 115px 122px;
-	background: url('../../img/about/promo.png');
+	padding: 100px 0;
+	background: url('../img/about/promo.png');
 	background-position: right center;
 	background-repeat: no-repeat;
 
@@ -331,10 +340,11 @@ footer .row {
 #promo-about h1 span {
 	background-color: #000;
 	color: #fff;
-	padding: 4px 40px;
+	padding: 0 32px;
 	text-transform: uppercase;
 	font-size: 48px;
 	font-weight: 300;
+	letter-spacing: 5px;
 	margin-bottom: 44px;	
 }
 
@@ -343,33 +353,35 @@ footer .row {
 	font-size: 18px;
 	color: #000;
 	z-index: 2;
-	margin-top: 44px;
+	margin-top: 39px;
 	letter-spacing: 8px;
 }
 
 #about-team{
-	margin-top: 71px;
-	margin-bottom: 100px;
+	padding-top: 71px;
+	padding-bottom: 40px;
 	background-color: #fafafa;	
 }
 
 #about-team h4 {
 	color: #000;
 	letter-spacing: 8px;
-}
-
-#about-team h4{
 	text-transform: uppercase;
-	margin-bottom: 40px;
+	margin-bottom: 32px;
 }
 
 #about-team p {
-	line-height: 26px;
+	color: #808080;
+	line-height: 29px;
 	font-size: 12px;
 }
 
+#about-team .first {
+	margin-bottom: 30px;
+}
+
 #about-team .skills h4{
-	margin-top: 40px;
+	margin-top: 35px;
 }
 
 #about-team .skills h5{
@@ -377,30 +389,46 @@ footer .row {
 	font-weight: 700;
 }
 
-#about-team .skills .skill-item {
-	
-}
-
 #about-team .skills .bar{
 	height: 2px;
 	width: 100%;
+	position: relative;
 	background-color: #ebebeb;
 	border: 3px solid #ebebeb;
 	position: relative;
-	margin-bottom: 20px;
+	margin-bottom: 34px;
 }
 
-#about-team .skills .photoshop-skroll {
+#about-team .skills .scroll {
 	position: absolute;
-	color: #000;
+	background-color: #000;
 	height: 2px;
-	width: 90%;
-	bottom: 1px;
+	bottom: -1px;
 	left: 1px;
+}
+#about-team .skills .ps {
+	width: 90%;
+}
+
+#about-team .skills .brand {
+	width: 95%;
+}
+
+#about-team .skills .photo {
+	width: 50%;
+}
+
+#about-team .skills .web {
+	width: 85%;
 }
 
 #about-team .team-img img {
 	width: 535px;
+}
+
+#about-members {
+	background-color: #fafafa;
+	padding-bottom: 87px;
 }
 
 #about-members .title {
@@ -414,14 +442,14 @@ footer .row {
 	color: #000;
 	z-index: 2;
 	margin-top: 44px;
-	letter-spacing: 8px;
+	letter-spacing: 11px;
 }
 
 #about-members .title p {
 	display: inline-block;
 	width: 50%;
-	margin-top: 25px;
-	margin-bottom: 67px;
+	margin-top: 19px;
+	margin-bottom: 55px;
 	line-height: 32px;
 	font-size: 12px;
 }
@@ -431,16 +459,60 @@ footer .row {
 	background-color: #eee;
 
 }
+#about-members .member-object .discr {
+	max-width: 358px;
+	background: #ffffff;
+	padding: 5px 33px;
+	color: #a3a3a3;
+}
 
-#about-members .member-object h2 {
-	color: #000;
+#about-members .member-object .discr h2 {
+	margin-bottom: 6px;
+	color: #041608;
 	text-transform: uppercase;
 	font-weight: 300;
 	font-size: 23px;
+	letter-spacing: 2.56px;
 
 }
 
-#about-members .member-object h3 {
-	margin-top: 10px;
+#about-members .member-object .discr h3 {
+	color: #777777;
+	margin-top: 7px;
+	margin-bottom: 14px;
 	font-size: 16px;
+}
+#about-members .member-object .discr p {
+	line-height: 23px;
+}
+
+/* Portfolio */
+
+#portfolio-heading {
+	background-color: #e2e2e2;
+	position: relative;
+	padding: 100px 0;
+	background: url('../img/portfolio/bg-heading.png');
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+#portfolio-heading h1 span {
+	background-color: #000;
+	color: #fff;
+	padding: 0 32px;
+	text-transform: uppercase;
+	font-size: 48px;
+	font-weight: 300;
+	letter-spacing: 5px;
+	margin-bottom: 44px;
+}
+
+#portfolio-heading p {
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #000;
+	z-index: 2;
+	margin-top: 39px;
+	letter-spacing: 8px;
 }
