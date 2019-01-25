@@ -5,9 +5,10 @@
   }
 }
 
-@media (min-width: 1200px) and (min-width: 425px) {
+@media (max-width: 1200px) and (min-width: 425px) {
   #request .container img {
     width: 88%;
+    top: -60px;
   }
 }
 
