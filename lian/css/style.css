@@ -327,10 +327,10 @@ footer .row {
 /* --About-- */
 
 #promo-about {
-	background-color: #f0f0f2;
 	position: relative;
 	padding: 100px 0;
 	background: url('../img/about/promo.png');
+	background-color: #f0f0f2;
 	background-position: right center;
 	background-repeat: no-repeat;
 
@@ -489,10 +489,10 @@ footer .row {
 /* Portfolio */
 
 #portfolio-heading {
-	background-color: #e2e2e2;
 	position: relative;
 	padding: 100px 0;
 	background: url('../img/portfolio/bg-heading.png');
+	background-color: #e2e2e2;
 	background-position: right center;
 	background-repeat: no-repeat;
 }
@@ -515,4 +515,34 @@ footer .row {
 	z-index: 2;
 	margin-top: 39px;
 	letter-spacing: 8px;
+}
+
+#contact-info {
+	color: #000;
+}
+
+#contact-info .title{
+	padding-bottom: 18px;
+}
+
+#contact-info .title h1 {
+	color: #000000;
+	font-size: 30px;
+	font-weight: 300;
+	letter-spacing: 12px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+#contact-info .title h2 {
+	color: #2f302f;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 0.4px;
+	line-height: 30px;
+}
+#contact-info .line{
+	width: 60px;
+	height: 1px;
+	background-color: #000000;
 }

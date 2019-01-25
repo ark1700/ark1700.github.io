@@ -1,0 +1,779 @@
+@media (min-width: 1200px)
+  .container 
+    max-width: 1172px
+@media (max-width: 1172px) and (min-width: 425px)
+  body 
+    min-width: 1172px
+  .container 
+    max-width: 1172px!important
+  #request .container img
+    width: 88%
+  .slick-next
+    right: -15px!important
+  .slick-prev
+    left: -15px!important
+
+body
+  font-family: 'Roboto', sans-serif
+  color: #000000
+a
+  text-decoration: none
+  &:hover
+    text-decoration: none
+
+#fixedbutton
+  position: fixed
+  bottom: 30px
+  right: 0px
+  z-index: 10
+  .call 
+    width: 67px
+    height: 67px
+    margin-bottom: 10px
+    background: #21BDE4
+    color: white
+    font-size: 30px
+    text-align: center
+    line-height: 67px
+    border: none
+  .up
+    width: 67px
+    height: 67px
+    background: #000000
+    color: white
+    font-size: 30px
+    text-align: center
+    line-height: 67px
+    border: none
+
+
+header
+  .city
+    background-color: #1B1B1B
+    .dropdown
+      text-align: right
+      a
+        font-size: 14px
+        color: #FFFFFF
+        i
+          margin-right: 6px
+          color: #01B4E1
+          font-size: 11px
+    .dropdown-menu a
+      color: #000
+  .contacts
+    padding-top: 35px
+    padding-bottom: 25px
+    .logo
+      margin-left: -32px
+    .address
+      font-weight: 300
+      font-size: 14px
+      i
+        color: #01B4E1
+        margin-right: 3px
+    .phone
+      font-weight: 300
+      font-size: 14px
+      text-align: right
+      p
+        margin-bottom: 8px
+      .number
+        font-weight: bold
+        line-height: normal
+        font-size: 24px
+    .btn-connect
+      padding: 10px 22px
+      background: #21BDE4
+      border-radius: 2px
+      font-weight: bold
+      font-size: 14px
+      color: #FFFFFF
+  nav
+    background-color: rgba(196, 196, 196, 0.2)
+    border: 1px solid #F1F1F1 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    .navbar-toggler
+      color: #000000
+    ul
+      width: 100%
+    li a
+      font-weight: bold
+      font-size: 14px
+      text-transform: uppercase
+      color: #000000
+      i
+        font-size: 24px
+    .navbar-nav .nav-link
+      padding: 8px 18px!important
+    
+#main_slider
+  margin-top: 38px
+  .main-slider
+    .fix
+      height: 527px
+      padding-left: 57px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      background-repeat: no-repeat
+      h1
+        font-weight: bold
+        font-size: 48px
+        text-transform: uppercase
+        color: #FFFFFF
+      .btn-more
+        padding: 10px 50px
+        background-color: #fff
+        border-radius: 2px
+        font-weight: bold
+        font-size: 14px
+    .huawei
+      background-image: url('../img/fix-huawei.png')
+    .honor
+      background-image: url('../img/fix-honor.png')
+    .slick-prev, .slick-next
+      z-index: 2
+      width: 67px
+      height: 67px
+      background: rgba(255, 255, 255, 0.4)
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
+    .slick-prev:before, .slick-next:before
+      color: #fff
+      font-family: Font Awesome\ 5 Pro
+      font-weight: 300
+      font-size: 28px
+    .slick-prev:before 
+      content: "\f177"
+      font-weight: 300
+    .slick-next:beforex
+      content: "\f178"
+      font-weight: 300
+    .slick-dots 
+      bottom: 10px
+      li
+        margin: 0 33px
+        button:before
+          content: ''
+          width: 75px
+          height: 3px
+          background: #C4C4C4
+          opacity: 0.3
+
+#we-repair
+  padding-top: 20px
+  padding-bottom: 75px
+  .title
+    margin-bottom: 50px
+    font-weight: bold
+    font-size: 48px
+    color: #000000
+    text-align: center
+  .phone
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 355px
+    padding-left: 43px
+    margin-bottom: 25px
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 60% center
+    h1
+      font-weight: bold
+      font-size: 24px
+      color: #FFFFFF
+      span
+        color: #41C7E9
+  .huawei
+    background-image: url('../img/phones-huawei.png')
+  .honor
+    background-image: url('../img/phones-honor.png')
+  .item
+    display: block
+    padding: 240px 0 38px
+    background-color: #f5f5f5
+    background-repeat: no-repeat
+    background-position: center 44px
+    color: #000000
+    text-align: center
+    border: 7px solid transparent
+    h1
+      font-size: 24px
+      font-weight: 700
+      line-height: 28px
+    h2
+      visibility: hidden
+      margin-bottom: 0
+      font-size: 14px
+      font-weight: 400
+      line-height: 16px
+    &:hover
+      border: 7px solid #21bde4
+      background-color: #ffffff
+      h2
+        visibility: visible
+  .tablet
+    background-image: url('../img/we-fix-tablet.png')
+  .laptop
+    background-image: url('../img/we-fix-laptop.png')
+  .watch
+    background-image: url('../img/we-fix-watch.png')
+  .btn-connect
+    margin-top: 60px
+    padding: 11px 125px
+    background: #21BDE4
+    border-radius: 2px
+    font-weight: bold
+    font-size: 14px
+    color: #FFFFFF
+
+#examples
+  padding-top: 42px
+  padding-bottom: 50px
+  background-color: #f5f5f5
+  .title
+    margin-bottom: 113px
+    font-size: 48px
+    font-weight: 700
+    line-height: 56px
+    text-align: center
+  .examples-slider
+    .slide
+      height: 450px
+    img
+      width: auto
+    .slick-prev, .slick-next
+      z-index: 2
+      width: 67px
+      height: 67px
+      background-color: #acacac
+      &:hover
+        background-color: #21bde4
+    .slick-prev
+      left: -45px
+    .slick-next
+      right: -45px
+    .slick-prev:before, .slick-next:before
+      color: #fff
+      font-family: Font Awesome\ 5 Pro
+      font-weight: 300
+      font-size: 28px
+    .slick-prev:before 
+      content: "\f177"
+      font-weight: 300
+    .slick-next:before
+      content: "\f178"
+      font-weight: 300
+    .slick-dots 
+      top: -64px
+      display: flex
+      justify-content: space-between
+      li
+        margin: 0 77px
+        button:before
+          opacity: 1
+          color: #b8b8b8
+          font-family: 'Roboto', sans-serif
+          font-size: 24px
+          font-weight: 700
+          line-height: 28px
+        button[id="slick-slide-control10"]:before
+          content: 'Смартфоны'
+        button[id="slick-slide-control11"]:before
+          content: 'Ноутбуки'
+        button[id="slick-slide-control12"]:before
+          content: 'Планшеты'
+        button[id="slick-slide-control13"]:before
+          content: 'Часы'
+      .slick-active
+        button
+          &:before
+            color: #000000 !important
+
+#request
+  padding-top: 115px
+  padding-bottom: 88px
+  .bg-laptops
+    background-image: url('../img/request-bg.png')
+  .bg-phones
+    background-image: url('../img/request-bg2.png')
+  .bg-tablets
+    background-image: url('../img/request-bg3.png')
+  .container
+    padding: 78px 0 90px
+    border-radius: 10px
+    background-repeat: no-repeat
+    position: relative
+    .content
+      margin-left: 97px
+      h1
+        color: #ffffff
+        font-size: 48px
+        font-weight: 700
+        line-height: 56px
+      h2
+        margin-bottom: 33px
+        color: #ffffff
+        font-size: 24px
+        font-weight: 700
+        line-height: 28px
+      input
+        padding: 20px 18px 18px
+        margin-bottom: 11px
+        width: 75%
+        border-radius: 2px
+        border: 1px solid #e2e2e2
+        background-color: #ffffff
+        font-size: 14px
+        font-weight: 400
+        line-height: 17px
+        &:placeholder 
+          color: #B3B3B3
+          font-size: 14px
+          font-weight: 400
+          line-height: 17px
+      button
+        margin-top: 27px
+        margin-bottom: 21px
+        padding: 11px 50px
+        background: #21BDE4
+        border-radius: 2px
+        color: #ffffff
+      p
+        color: rgba(255, 255, 255, 0.5)
+        font-size: 14px
+        font-weight: 400
+        line-height: 16px
+    img
+      position: absolute
+      top: -135px
+      // width: 80%
+
+#features
+  padding-top: 27px
+  padding-bottom: 100px
+  background-image: url('../img/features-bg.png')
+  background-repeat: no-repeat
+  background-position: center
+  .title
+    padding-bottom: 32px
+    color: #000000
+    font-size: 48px
+    font-weight: 700
+    line-height: 56px
+    text-align: center
+  .feature
+    padding-top: 160px
+    position: relative
+    img
+      position: absolute
+      top: 45px
+      left: 25%
+    h1
+      margin-bottom: 17px
+      font-size: 14px
+      font-weight: 700
+      line-height: 16px
+      text-transform: uppercase
+    p
+      margin-bottom: 15px
+      font-size: 14px
+      font-weight: 300
+      line-height: 25px
+
+#service
+  padding-top: 72px
+  padding-bottom: 60px
+  background-color: #000000
+  background-image: url('../img/service-bg.png')
+  background-size: 100% auto
+  background-repeat: no-repeat
+  background-position: center
+  h1
+    margin-bottom: 25px
+    color: #ffffff
+    font-size: 48px
+    font-weight: 700
+    line-height: 56px
+  p
+    margin-bottom: 30px
+    color: #ffffff
+    font-size: 16px
+    font-weight: 300
+    line-height: 28px
+  .btn-more
+    padding: 11px 49px
+    border-radius: 2px
+    background-color: #21bde4
+    color: #ffffff
+    font-size: 14px
+    font-weight: 700
+    line-height: 16px
+
+#reviews
+  .title
+    margin-bottom: 25px
+    color: #000000
+    font-size: 48px
+    font-weight: 700
+    line-height: 56px
+    text-align: center
+  .review
+    padding-top: 55px
+    padding-left: 190px
+    padding-bottom: 36px
+    margin: 0 120px 0 60px
+    background: #212121
+    border-radius: 10px
+    position: relative
+    .profile
+      padding: 13px 20px 100px
+      position: absolute
+      left: -50px
+      top: -50px
+      display: inline-block
+      background: #F4F4F4
+      border-radius: 10px
+      h1
+        margin-top: 45px
+        color: #000000
+        font-size: 14px
+        font-weight: 700
+        line-height: 19px
+        text-transform: uppercase
+        text-align: center
+
+    p
+      width: 543px
+      font-weight: 300
+      line-height: 28px
+      font-size: 16px
+      color: #FFFFFF
+    .btn-full
+      display: inline-block
+      padding: 11px 23px
+      border-radius: 2px
+      background-color: #21bde4
+      color: #ffffff
+      font-size: 14px
+      font-weight: 700
+      line-height: 16px
+    .btn-org
+      display: inline-block
+      padding: 11px 20px
+      border-radius: 2px
+      background-color: #ffffff
+      color: #000000
+      font-size: 14px
+      font-weight: 700
+      line-height: 16px
+  // slider
+  .slick-track
+    padding: 50px 50px 
+  .slick-prev, .slick-next
+    z-index: 2
+    width: 67px
+    height: 67px
+    background-color: #acacac
+    &:hover
+      background-color: #21bde4
+  .slick-prev
+    left: -45px
+  .slick-next
+    right: -45px
+  .slick-prev:before, .slick-next:before
+    color: #fff
+    font-family: Font Awesome\ 5 Pro
+    font-weight: 300
+    font-size: 28px
+  .slick-prev:before 
+    content: "\f177"
+    font-weight: 300
+  .slick-next:before
+    content: "\f178"
+    font-weight: 300
+  .slick-dots 
+    bottom: -15px
+    li
+      margin: 0 33px
+      button:before
+        content: ''
+        width: 75px
+        height: 3px
+        background-color: #C4C4C4
+        opacity: 1
+    .slick-active button:before
+      background-color: #21bde4
+
+#masters
+  padding-top: 68px
+  padding-bottom: 20px
+  background-color: #f4f4f4
+  .title
+    margin-bottom: 30px
+    color: #000000
+    font-size: 48px
+    font-weight: 700
+    line-height: 56px
+    text-align: center
+  .master
+    display: inline-block
+    padding: 13px 50px
+    margin: 0 45px
+    background-color: #fff
+    border-radius: 10px
+    img
+      margin: 0 auto
+    h1
+      margin-top: 24px
+      margin-bottom: 12px
+      font-weight: bold
+      font-size: 14px
+      text-align: center
+      text-transform: uppercase
+    p
+      font-weight: 300
+      line-height: 28px
+      font-size: 16px
+      color: #000000
+      text-align: center
+    .btn-call
+      display: block
+      padding: 10px 46px
+      margin-top: 20px
+      margin-bottom: 16px
+      background: #21BDE4
+      border-radius: 2px
+      font-weight: bold
+      font-size: 14px
+      color: #FFFFFF
+      text-align: center
+      &:hover
+        text-decoration: none
+    &:hover
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25)
+  // slider
+  .slick-track
+    padding: 15px 0
+  .slick-prev, .slick-next
+    z-index: 2
+    width: 67px
+    height: 67px
+    background-color: #acacac
+    &:hover
+      background-color: #21bde4
+  .slick-prev
+    left: -45px
+  .slick-next
+    right: -45px
+  .slick-prev:before, .slick-next:before
+    color: #fff
+    font-family: Font Awesome\ 5 Pro
+    font-weight: 300
+    font-size: 28px
+  .slick-prev:before 
+    content: "\f177"
+    font-weight: 300
+  .slick-next:before
+    content: "\f178"
+    font-weight: 300
+  .slick-dots 
+    bottom: -40px
+    li
+      margin: 0 33px
+      button:before
+        content: ''
+        width: 75px
+        height: 3px
+        background-color: #C4C4C4
+        opacity: 1
+    .slick-active button:before
+      background-color: #21bde4
+
+#stages
+  margin-top: 35px
+  margin-bottom: -30px
+  background-color: #ffffff
+  .title
+    margin-bottom: 35px
+    font-size: 48px
+    font-weight: 700
+    line-height: 56px
+    text-align: center
+  .btn-submit
+    padding: 11px 29px
+    border-radius: 2px
+    background-color: #ffffff
+    color: #000000
+    font-size: 14px
+    font-weight: 700
+    line-height: 16px
+  .row
+    padding: 0 80px
+  .stage-mobile
+    display: none
+  .stage
+    padding: 26px 110px 43px 41px
+    margin-bottom: 25px
+    height: 290px
+    position: relative
+    h1
+      font-size: 45px
+      font-weight: 700
+      line-height: 53px
+    h2
+      font-size: 16px
+      font-weight: 700
+      line-height: 19px
+      text-transform: uppercase
+    p
+      margin-bottom: 32px
+      font-size: 16px
+      font-weight: 300
+      line-height: 28px
+  .stage-1:before
+    position: absolute
+    width: 68px
+    height: 68px
+    left: 100%
+    top: 0
+    margin-left: -22px
+    background-color: #21bde4
+    z-index: 3
+    font-family: Font Awesome\ 5 Pro
+    font-size: 30px
+    line-height: 68px
+    content: "\f178"
+    font-weight: 300
+    text-align: center
+  .stage-2:before
+    position: absolute
+    width: 68px
+    height: 68px
+    right: 0
+    top: 100%
+    margin-top: -22px
+    background-color: #f4f4f4
+    z-index: 3
+    font-family: Font Awesome\ 5 Pro
+    font-size: 30px
+    line-height: 68px
+    content: "\f175"
+    font-weight: 300
+    text-align: center
+  .stage-3:before
+    position: absolute
+    width: 68px
+    height: 68px
+    right: 100%
+    top: 0
+    margin-right: -22px
+    background-color: #21bde4
+    z-index: 3
+    font-family: Font Awesome\ 5 Pro
+    font-size: 30px
+    line-height: 68px
+    content: "\f177"
+    font-weight: 300
+    text-align: center
+  
+  .blue
+    background-color: #21bde4
+    color: #ffffff
+  .grey
+    background-color: #f4f4f4
+    color: #000000
+    
+footer
+  .contacts
+    padding-top: 35px
+    padding-bottom: 8px
+    background-color: rgba(196, 196, 196, 0.2)
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+    img
+      margin-left: -15px
+    .address
+      font-weight: 300
+      font-size: 14px
+      i
+        color: #01B4E1
+        margin-right: 3px
+    .phone
+      font-weight: 300
+      font-size: 14px
+      text-align: right
+      p
+        margin-bottom: 8px
+      .number
+        font-weight: bold
+        line-height: normal
+        font-size: 24px
+    .btn-connect
+      padding: 10px 22px
+      background: #21BDE4
+      border-radius: 2px
+      font-weight: bold
+      font-size: 14px
+      color: #FFFFFF
+  .info
+    padding-top: 20px
+    padding-bottom: 12px
+    background-color: rgba(196, 196, 196, 0.2)
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+    h1
+      margin-bottom: 24px
+      font-weight: bold
+      font-size: 16px
+      text-transform: uppercase
+      color: #000000
+    p
+      margin-bottom: 10px
+      width: 600px
+      font-weight: 300
+      line-height: 28px
+      font-size: 16px
+      color: #000000
+    .map
+      display: flex
+      justify-content: flex-end
+    .btn-info
+      padding: 8px 48px
+      background: #21BDE4
+      border-radius: 2px
+  nav
+    background-color: rgba(196, 196, 196, 0.2)
+    border: 1px solid #F1F1F1 
+    li a
+      padding: 29px 8px!important
+      font-weight: bold
+      font-size: 14px
+      text-transform: uppercase
+      color: #000000
+    ul
+      width: 100%
+  .copyright
+    background: #1B1B1B
+    .container
+      display: flex
+      justify-content: space-between
+    h1
+      margin-bottom: 0
+      font-weight: 300
+      font-size: 14px
+      line-height: 30px
+      color: #FFFFFF
+    a
+      font-weight: 300
+      font-size: 14px
+      line-height: 30px
+      text-decoration-line: underline
+      color: #FFFFFF
+  
+@import "media"
+  
+
+
