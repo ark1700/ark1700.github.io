@@ -5,14 +5,14 @@
   }
 }
 
-@media (max-width: 1200px) and (min-width: 425px) {
+@media (max-width: 1200px) and (min-width: 576px) {
   #request .container img {
     width: 88%;
     top: -60px;
   }
 }
 
-@media (max-width: 1172px) and (min-width: 425px) {
+@media (max-width: 1172px) and (min-width: 576px) {
   body {
     min-width: 1186px;
   }
@@ -1134,7 +1134,7 @@ footer .copyright a {
   color: #FFFFFF;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 576px) {
   #fixedbutton {
     display: none;
   }
@@ -1210,6 +1210,7 @@ footer .copyright a {
   }
   #request .container {
     padding: 10px 5px 25px;
+    margin-bottom: 15px;
   }
   #request .container .content {
     margin: 0px 10px;
