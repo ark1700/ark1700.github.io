@@ -5,15 +5,18 @@
   }
 }
 
+@media (min-width: 1200px) and (min-width: 425px) {
+  #request .container img {
+    width: 88%;
+  }
+}
+
 @media (max-width: 1172px) and (min-width: 425px) {
   body {
     min-width: 1172px;
   }
   .container {
     max-width: 1172px !important;
-  }
-  #request .container img {
-    width: 88%;
   }
   .slick-next {
     right: -15px !important;
