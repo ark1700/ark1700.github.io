@@ -108,9 +108,10 @@ header .navbar-nav li a:hover::before{
 	padding: 35px 0 70px;
 }
 
+
 #photo img {
 	margin-bottom: 20px;
-	width:100%;
+	/* width:100%; */
 }
 
 #promo {
@@ -541,8 +542,12 @@ footer .row {
 	letter-spacing: 0.4px;
 	line-height: 30px;
 }
-#contact-info .line{
+#contact-info .line {
 	width: 60px;
 	height: 1px;
 	background-color: #000000;
+}
+
+.mix-target {
+	display: none;
 }

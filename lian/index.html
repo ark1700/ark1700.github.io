@@ -94,46 +94,44 @@
       <div class="container">
         <div class="row">
           <ul class="nav navbar-nav">
-            <li><a class="active" href="#">All</a></li>
-            <li><a href="#">Logo</a></li>
-            <li><a href="#">Mobile app</a></li>
-            <li><a href="#">Wordpress</a></li>
-            <li><a href="#">Web design</a></li>
-            <li><a href="#">UI/IX</a></li>
-            <li><a href="#">Branding</a></li>
+            <li><a class="filter-btn" data-filter="all">All</a></li>
+            <li><a class="filter-btn" data-filter=".logo">Logo</a></li>
+            <li><a class="filter-btn" data-filter=".mob-app">Mobile app</a></li>
+            <li><a class="filter-btn" data-filter=".wordpress">Wordpress</a></li>
+            <li><a class="filter-btn" data-filter=".wdesign">Web design</a></li>
+            <li><a class="filter-btn" data-filter=".ui">UI/IX</a></li>
+            <li><a class="filter-btn" data-filter=".branding">Branding</a></li>
           </ul>
         </div>
-        <div class="row photos pt20">
-          <div class="col-sm-4">
-            <a href="#">
-              <img src="img/photo-1.jpg" class="img-responsive" alt=""></a>
-            <a href="#">
-              <img src="img/photo-2.jpg" class="img-responsive" alt=""></a>
-            <a href="#">
-              <img src="img/photo-3.jpg" class="img-responsive" alt=""></a>
-          </div>
-          <div class="col-sm-4">
-            <a href="#">
-              <img src="img/photo-4.jpg" class="img-responsive" alt=""></a>
-            <a href="#">
-              <img src="img/photo-5.jpg" class="img-responsive" alt=""></a>
-            <a href="#">
-              <img src="img/photo-6.jpg" class="img-responsive"  alt=""></a>
-            <a href="#">
-              <img src="img/photo-7.jpg" class="img-responsive"  alt=""></a>
-          </div>
-          <div class="col-sm-4">
-            <a href="#">
-              <img src="img/photo-8.jpg" class="img-responsive"  alt=""></a>
-            <a href="#">
-              <img src="img/photo-9.jpg" class="img-responsive"  alt=""></a>
-            <a href="#">
-              <img src="img/photo-10.jpg" class="img-responsive"  alt=""></a>
+
+        <div class="row photos pt20" id="mix-wrapper">
+          <div class="c">
+            <a href="#"  class="mix-target logo ui" class="mix-target logo ui">
+              <img src="img/photo-1.jpg" alt="img"></a>
+            <a href="#" class="mix-target mob-app branding">
+               <img src="img/photo-2.jpg" alt="img"></a>
+            <a href="#"  class="mix-target wordpress logo" class="mix-target wordpress logo">
+              <img src="img/photo-3.jpg" alt="img"></a>
+            <a href="#" class="mix-target wdesign mob-app">
+               <img src="img/photo-4.jpg" alt="img"></a>
+            <a href="#"  class="mix-target ui wordpress" class="mix-target ui wordpress">
+              <img src="img/photo-5.jpg" alt="img"></a>
+            <a href="#"  class="mix-target branding wdesign"  class="mix-target branding wdesign" >
+              <img src="img/photo-6.jpg" alt="img"></a>
+            <a href="#"  class="mix-target logo ui"  class="mix-target logo ui" >
+              <img src="img/photo-7.jpg" alt="img"></a>
+            <a href="#" class="mix-target mob-app branding" >
+                <img src="img/photo-8.jpg" alt="img"></a>
+            <a href="#"  class="mix-target wordpress logo"  class="mix-target wordpress logo" >
+              <img src="img/photo-9.jpg" alt="img"></a>
+            <a href="#" class="mix-target wbdesign mob-app" >
+                <img src="img/photo-10.jpg" alt="img"></a>
           </div>
         </div>
-        <div class=" row text-center">
-          <!-- <button type="button" class="btn text-uppercase">Load more</button> -->
-        </div>
+        
+        <!-- <div class=" row text-center">
+          <button type="button" class="btn text-uppercase">Load more</button>
+        </div> -->
       </div>
     </section>
     <footer class="container-fluid text-center">
@@ -156,9 +154,31 @@
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
+    <!-- MixItUp -->
+    <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <script>
+      $('#mix-wrapper').mixItUp({
+        load: {
+          sort: 'order:asc'
+        },
+        animation: {
+          effects: 'fade rotateZ(-180deg)',
+          duration: 700
+        },
+        selectors: {
+          target: '.mix-target',
+          filter: '.filter-btn',
+          sort: '.sort-btn'
+        },
+        callbacks: {
+          onMixEnd: function(state){
+            console.log(state)
+          }
+        }
+      });
+    </script>
   </body>
 </html>
