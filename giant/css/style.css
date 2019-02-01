@@ -625,7 +625,7 @@ button:hover {
   font-family: 'Dosis', sans-serif;
   font-size: 36px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 38px;
   text-align: center;
 }
 
@@ -758,12 +758,43 @@ footer p {
 }
 
 @media (max-width: 451px) {
+  #banner {
+    padding-bottom: 100px;
+  }
+  #banner .header {
+    padding: 10px 0;
+  }
+  #banner .navbar li .btn-download {
+    padding: 9px 15px !important;
+  }
+  #banner .text {
+    margin-top: 50px;
+  }
   #banner .logo {
     margin-left: 15px !important;
   }
   #banner ul {
     margin-top: 20px  !important;
     margin-left: 15px !important;
+  }
+  #dont-leave img {
+    width: 100%;
+  }
+  #pricing p {
+    margin: 30px 0;
+    width: 100%;
+  }
+  #testimonials .subtitle {
+    width: 100%;
+  }
+  #testimonials .item {
+    padding: 22px;
+  }
+  #download .item {
+    padding-left: 100px;
+  }
+  #download .item i {
+    width: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -491,7 +491,7 @@
     <div class="contacts">
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-sm-2"><img src="huawei/img/huawei_logo 2.png" alt="logo"></div>
+          <div class="col-sm-2"><img src="img/huawei_logo 2.png" alt="logo"></div>
           <div class="col-sm-4">
             <div class="address">
               <p><i class="fal fa-map-marker-alt"></i>г. Нижний Новгород, Варварская 27/8, м.Горьковская</p>
@@ -650,22 +650,20 @@
     });
   </script>
   <script>
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("topBtn").style.display = "block";
+    
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 700) {
+        $('#topBtn').fadeIn();
       } else {
-        document.getElementById("topBtn").style.display = "none";
+        $('#topBtn').fadeOut();
       }
-    }
+    });
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
+    $('#topBtn').click(function() {
+      event.preventDefault();
+      $('html').animate({scrollTop: 0}, 800)      
+    });
+
   </script>
 </body>
 </html>
