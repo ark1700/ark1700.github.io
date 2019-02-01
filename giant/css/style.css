@@ -777,8 +777,20 @@ footer p {
     margin-top: 20px  !important;
     margin-left: 15px !important;
   }
+  #features {
+    margin-top: 60px;
+  }
+  #dont-leave {
+    margin: 60px 0;
+  }
   #dont-leave img {
     width: 100%;
+  }
+  #screen-shots {
+    padding: 50px 0;
+  }
+  #pricing {
+    padding-top: 60px;
   }
   #pricing p {
     margin: 30px 0;
@@ -790,11 +802,17 @@ footer p {
   #testimonials .item {
     padding: 22px;
   }
+  #download h1 {
+    margin-bottom: 30px;
+  }
   #download .item {
     padding-left: 100px;
   }
   #download .item i {
     width: 100px;
+  }
+  footer {
+    padding: 14px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
