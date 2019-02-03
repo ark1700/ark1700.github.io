@@ -69,11 +69,9 @@
     background-repeat: no-repeat
     background-position: right
     background-size: 50vw 
-    width: 100vw
+    width: 100%
     height: 90%
     bottom: 0
-    // img
-    //   width: 50vw
 
 // features
 #features
@@ -120,6 +118,7 @@
   .title
     margin-top: 55px
     margin-bottom: 70px
+    margin-left: 15px
     h1    
       color: #222222
       font-family: 'Dosis', sans-serif
@@ -133,6 +132,7 @@
       font-weight: 300
       line-height: 24px
   .content
+    margin-left: 15px
     p
       margin-bottom: 28px 
       color: #777777
@@ -152,8 +152,8 @@
 // screen-shots
 #screen-shots
   padding-top: 120px
-  padding-bottom: 90px
   background-color: #f7fafc
+  position: relative
   h1
     color: #222222
     font-family: 'Dosis', sans-serif
@@ -168,36 +168,37 @@
     font-weight: 300
     line-height: 24px
     text-align: center
-  // slider
-  img
-    width: 320px 
-    height: 480px
-  .screen
-    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1)
-    width: 320px 
-    height: 480px
-  .slick-slide 
-    margin: 50px 20px
-  .slick-track 
-    padding-top: 10px
-  .slick-next, .slick-prev
+  // slider  
+  #carousel 
+    width: 100%
+    height: 700px
+    .container
+      display: relative
+    img 
+      display: hidden
+      cursor: pointer
+      width: 360px 
+      height: 500px
+      box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1)
+  #next, #prev
+    position: absolute
+    top: 62%
     width: 40px
     height: 40px
     transition: all .5s
-  .slick-next
-    right: -60px
+    color: transparent
+  #next
+    left: 50%
+    margin-left: 630px
     background-image: url('../img/right_arrow.png')
     &:hover
       background-image: url('../img/right_arrow_hover.png')
-  .slick-prev
-    left: -60px
+  #prev
+    right: 50%
+    margin-right: 630px
     background-image: url('../img/left_arrow.png')
     &:hover
       background-image: url('../img/left_arrow_hover.png')
-  .slick-next:before, .slick-prev:before
-    content:' ' !important  
-    
-  
 
 // pricing
 #pricing
@@ -222,6 +223,7 @@
     padding: 10px 0 40px
     margin: 0 auto 5px
     background-color: #f7fafc
+    transition: all 0.5s
     h4
       font-family: 'Dosis', sans-serif
       font-size: 20px
@@ -236,6 +238,8 @@
       font-size: 48px
       font-weight: 600
       position: relative
+      transition: all 0.5s
+      
       sub, sup
         font-size: 18px
       &:after
@@ -247,6 +251,7 @@
         height: 0
         border-bottom: 72px solid #f7fafc
         border-left: 262px solid transparent
+        transition: all 0.5s
         
       &:before
         content: ''
@@ -257,6 +262,7 @@
         height: 0
         border-bottom: 72px solid #f7fafc
         border-right: 262px solid transparent
+        transition: all 0.5s
         
     ul
       padding-top: 28px
@@ -296,7 +302,8 @@
       color: #333333
       font-size: 14px
       font-weight: 600
-      line-height: 32px 
+      line-height: 32px
+      transition: all 0.5s 
     &:hover
       background-color: #fff
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1)

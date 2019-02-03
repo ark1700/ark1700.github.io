@@ -17,6 +17,8 @@
     <!-- slick slider -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- animate -->
+    <link rel="stylesheet" href="css/animate.css">
   </head>
   <body>
     <!-- banner -->
@@ -113,10 +115,10 @@
     <section id="dont-leave">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 wow sideInLeft">
             <img src="img/dont-leave-iphone.png" alt="img">
           </div>
-          <div class="col-md-6 offset-md-2">
+          <div class="col-md-6 offset-md-2 wow sideInRight">
             <div class="title">
               <h1>We don’t leave you stranded</h1>
               <p>Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM,
@@ -144,29 +146,16 @@
         <h1>Take a look at our screenshots</h1>
         <p>Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a<br>
         UX designer, why develop this totally separate skill?</p>
-        <div class="center slider">
-          <div class="screen">
-            <img src="img/screen-shot-4.png" alt="img">
-          </div>
-          <div class="screen">
-            <img src="img/screen-shot-4.png" alt="img">
-          </div>
-          <div class="screen">
-            <img src="img/screen-shot-4.png" alt="img">
-          </div>
-          <div class="screen">
-            <img src="img/screen-shot-4.png" alt="img">
-          </div>
-          <div class="screen">
-            <img src="img/screen-shot-4.png" alt="img">
-          </div>
-          <div class="screen">
-            <img src="img/screen-shot-4.png" alt="img">
-          </div>
-          <div class="screen">
-            <img src="img/screen-shot-4.png" alt="img">
-          </div>
+        <div id="carousel" class="slider">
+          <img src="img/screen-shot-4.png" alt="img">
+          <img src="img/screen-shot-5.png" alt="img">
+          <img src="img/screen-shot-6.png" alt="img">
+          <img src="img/screen-shot-7.png" alt="img">
+          <img src="img/screen-shot-1.png" alt="img">
+          <img src="img/screen-shot-2.png" alt="img">
+          <img src="img/screen-shot-3.png" alt="img">
         </div>
+        <a href="#" id="prev">prev</a><a href="#" id="next">next</a>
       </div>
     </section>
 
@@ -342,80 +331,36 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- waterwheel carousel -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var carousel = $("#carousel").waterwheelCarousel({
+          flankingItems: 3,
+          keyboardNav: true,
+          separation: 290,
+          separationMultiplier: 0.5,
+          sizeMultiplier: 0.8,
+          opacityMultiplier: 1
+        });
+        $('#prev').bind('click', function () {
+          carousel.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carousel.next();
+          return false;
+        });
+      });
+    </script>
     <!-- slick slider -->
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="slick/slick.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".center").slick({
-          // centerMode: true,
-          centerPadding: '60px',
-          slidesToShow: 3,
-          infinite: true,
-          responsive: [
-            {
-              breakpoint: 1200,
-              settings: {
-                arrows: false,
-                // centerMode: true,
-                centerPadding: '20px',
-                slidesToShow: 2
-              }
-            },
-            {
-              breakpoint: 740,
-              settings: {
-                arrows: false,
-                // centerMode: true,
-                centerPadding: '0px',
-                slidesToShow: 1
-              }
-            }
-          ]
-        });
-        $(".regular").slick({
-          infinite: true,
-          slidesToShow: 3,
-          slidesToScroll: 1,  
-          infinite: true,
-          responsive: [
-            {
-              breakpoint: 1200,
-              settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '0',
-                slidesToShow: 2
-              }
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                arrows: false,
-                centerPadding: '20px',
-                slidesToShow: 1
-              }
-            }
-          ]
-        });
-      });
-    </script>
-    <!-- video -->
-    <script>
-      $(document).on('click','.js-videoPoster',function(e) {
-        e.preventDefault();
-        var poster = $(this);
-        var wrapper = poster.closest('.js-videoWrapper');
-        videoPlay(wrapper);
-      });
-
-      function videoPlay(wrapper) {
-        var iframe = wrapper.find('.js-videoIframe');
-        var src = iframe.data('src');
-        wrapper.addClass('videoWrapperActive');
-        iframe.attr('src',src);
-      }
-    </script>
+    <script src="js/wow.js"></script>
+    <script src="js/main.js"></script>
+    
+    
   </body>
 </html>
