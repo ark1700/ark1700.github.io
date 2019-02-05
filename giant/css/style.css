@@ -17,7 +17,7 @@ button:hover {
   cursor: pointer;
 }
 
-#banner {
+.banner {
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
   background-color: #f7fafc;
@@ -27,11 +27,11 @@ button:hover {
   position: relative;
 }
 
-#banner .header {
+.banner .header {
   padding: 53px 0;
 }
 
-#banner .header .logo {
+.banner .header .logo {
   font-family: 'Dosis', sans-serif;
   font-size: 36px;
   font-weight: 700;
@@ -39,22 +39,22 @@ button:hover {
   vertical-align: bottom;
 }
 
-#banner .header .navbar {
+.banner .header .navbar {
   padding: 0;
   font-size: 14px;
   font-weight: 400;
 }
 
-#banner .header .navbar li {
+.banner .header .navbar li {
   display: inline-block;
   margin-left: 45px;
 }
 
-#banner .header .navbar li a {
+.banner .header .navbar li a {
   color: #ffffff;
 }
 
-#banner .header .navbar li .btn-download {
+.banner .header .navbar li .btn-download {
   padding: 12px 30px;
   border-radius: 20px;
   background-color: #ffffff;
@@ -63,35 +63,35 @@ button:hover {
   line-height: 24px;
 }
 
-#banner .text {
+.banner .text {
   margin-top: 84px;
   z-index: 10;
 }
 
-#banner .text h1 {
+.banner .text h1 {
   margin-bottom: 20px;
   font-family: 'Dosis', sans-serif;
   font-size: 54px;
   font-weight: 600;
 }
 
-#banner .text p {
+.banner .text p {
   margin-bottom: 12px;
   font-size: 14px;
   line-height: 24px;
 }
 
-#banner .text li {
+.banner .text li {
   margin-bottom: 11px;
   font-size: 14px;
   line-height: 24px;
 }
 
-#banner .text .fa-check-circle {
+.banner .text .fa-check-circle {
   margin-right: 20px;
 }
 
-#banner .text .btn-start {
+.banner .text .btn-start {
   margin-top: 19px;
   padding: 13px 40px;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -106,7 +106,7 @@ button:hover {
   line-height: 14px;
 }
 
-#banner .banner-picture {
+.banner .banner-picture {
   position: absolute;
   background-image: url("../img/banner-iphones.png");
   background-repeat: no-repeat;
@@ -117,16 +117,16 @@ button:hover {
   bottom: 0;
 }
 
-#features {
+.features {
   padding-top: 117px;
 }
 
-#features .item {
+.features .item {
   padding-left: 100px;
   position: relative;
 }
 
-#features .item h2 {
+.features .item h2 {
   color: #222222;
   font-family: 'Dosis', sans-serif;
   font-size: 24px;
@@ -134,7 +134,7 @@ button:hover {
   line-height: 24px;
 }
 
-#features .item p {
+.features .item p {
   margin-top: 16px;
   margin-bottom: 53px;
   color: #777777;
@@ -143,7 +143,7 @@ button:hover {
   line-height: 24px;
 }
 
-#features .item .icon {
+.features .item .icon {
   position: absolute;
   left: 0;
   top: 0;
@@ -158,25 +158,25 @@ button:hover {
   text-align: center;
 }
 
-#features .line {
+.features .line {
   margin-top: 40px;
   width: 100%;
   height: 2px;
   background-color: #eeeeee;
 }
 
-#dont-leave {
+.dont-leave {
   margin-top: 120px;
   margin-bottom: 120px;
 }
 
-#dont-leave .title {
+.dont-leave .title {
   margin-top: 55px;
   margin-bottom: 70px;
   margin-left: 15px;
 }
 
-#dont-leave .title h1 {
+.dont-leave .title h1 {
   color: #222222;
   font-family: 'Dosis', sans-serif;
   font-size: 36px;
@@ -184,7 +184,7 @@ button:hover {
   line-height: 30px;
 }
 
-#dont-leave .title p {
+.dont-leave .title p {
   margin-top: 21px;
   color: #777777;
   font-size: 14px;
@@ -192,11 +192,11 @@ button:hover {
   line-height: 24px;
 }
 
-#dont-leave .content {
+.dont-leave .content {
   margin-left: 15px;
 }
 
-#dont-leave .content p {
+.dont-leave .content p {
   margin-bottom: 28px;
   color: #777777;
   font-size: 14px;
@@ -204,7 +204,7 @@ button:hover {
   line-height: 24px;
 }
 
-#dont-leave .content li {
+.dont-leave .content li {
   margin-bottom: 10px;
   color: #777777;
   font-size: 14px;
@@ -212,18 +212,18 @@ button:hover {
   line-height: 24px;
 }
 
-#dont-leave .content li i {
+.dont-leave .content li i {
   margin-right: 20px;
   color: #222222;
 }
 
-#screen-shots {
+.screen-shots {
   padding-top: 120px;
   background-color: #f7fafc;
   position: relative;
 }
 
-#screen-shots h1 {
+.screen-shots h1 {
   color: #222222;
   font-family: 'Dosis', sans-serif;
   font-size: 36px;
@@ -232,7 +232,7 @@ button:hover {
   text-align: center;
 }
 
-#screen-shots p {
+.screen-shots p {
   margin-top: 26px;
   color: #777777;
   font-size: 14px;
@@ -241,16 +241,16 @@ button:hover {
   text-align: center;
 }
 
-#screen-shots #carousel {
+.screen-shots #carousel {
   width: 100%;
   height: 700px;
 }
 
-#screen-shots #carousel .container {
+.screen-shots #carousel .container {
   display: relative;
 }
 
-#screen-shots #carousel img {
+.screen-shots #carousel img {
   display: hidden;
   cursor: pointer;
   width: 360px;
@@ -259,7 +259,7 @@ button:hover {
           box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
 }
 
-#screen-shots #next, #screen-shots #prev {
+.screen-shots #next, .screen-shots #prev {
   position: absolute;
   top: 62%;
   width: 40px;
@@ -269,33 +269,33 @@ button:hover {
   color: transparent;
 }
 
-#screen-shots #next {
+.screen-shots #next {
   left: 50%;
   margin-left: 630px;
   background-image: url("../img/right_arrow.png");
 }
 
-#screen-shots #next:hover {
+.screen-shots #next:hover {
   background-image: url("../img/right_arrow_hover.png");
 }
 
-#screen-shots #prev {
+.screen-shots #prev {
   right: 50%;
   margin-right: 630px;
   background-image: url("../img/left_arrow.png");
 }
 
-#screen-shots #prev:hover {
+.screen-shots #prev:hover {
   background-image: url("../img/left_arrow_hover.png");
 }
 
-#pricing {
+.pricing {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 120px;
 }
 
-#pricing h1 {
+.pricing h1 {
   margin-bottom: 23px;
   font-family: 'Dosis', sans-serif;
   font-size: 36px;
@@ -303,7 +303,7 @@ button:hover {
   line-height: 30px;
 }
 
-#pricing p {
+.pricing p {
   margin: 0px auto 80px;
   width: 50vw;
   color: #777777;
@@ -312,7 +312,7 @@ button:hover {
   line-height: 24px;
 }
 
-#pricing .item {
+.pricing .item {
   width: 262px;
   padding: 10px 0 40px;
   margin: 0 auto 5px;
@@ -321,14 +321,14 @@ button:hover {
   transition: all 0.5s;
 }
 
-#pricing .item h4 {
+.pricing .item h4 {
   font-family: 'Dosis', sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
 }
 
-#pricing .item .price {
+.pricing .item .price {
   padding-top: 18px;
   padding-bottom: 36px;
   background-color: #ffffff;
@@ -341,11 +341,11 @@ button:hover {
   transition: all 0.5s;
 }
 
-#pricing .item .price sub, #pricing .item .price sup {
+.pricing .item .price sub, .pricing .item .price sup {
   font-size: 18px;
 }
 
-#pricing .item .price:after {
+.pricing .item .price:after {
   content: '';
   position: absolute;
   top: 90px;
@@ -358,7 +358,7 @@ button:hover {
   transition: all 0.5s;
 }
 
-#pricing .item .price:before {
+.pricing .item .price:before {
   content: '';
   position: absolute;
   top: 90px;
@@ -371,7 +371,7 @@ button:hover {
   transition: all 0.5s;
 }
 
-#pricing .item ul {
+.pricing .item ul {
   padding-top: 28px;
   padding-bottom: 38px;
   padding-left: 34px;
@@ -383,12 +383,12 @@ button:hover {
   line-height: 30px;
 }
 
-#pricing .item ul li {
+.pricing .item ul li {
   margin-bottom: 4px;
   position: relative;
 }
 
-#pricing .item ul li:after {
+.pricing .item ul li:after {
   content: '';
   position: absolute;
   top: 100%;
@@ -397,11 +397,11 @@ button:hover {
   border: 1px dashed #eeeeee;
 }
 
-#pricing .item ul li:last-child:after {
+.pricing .item ul li:last-child:after {
   width: 0;
 }
 
-#pricing .item .start {
+.pricing .item .start {
   display: block;
   margin-bottom: 14px;
   color: #aaaaaa;
@@ -410,7 +410,7 @@ button:hover {
   line-height: 14px;
 }
 
-#pricing .item .btn-buy {
+.pricing .item .btn-buy {
   display: inline-block;
   padding: 0px 42px;
   border-radius: 20px;
@@ -424,27 +424,27 @@ button:hover {
   transition: all 0.5s;
 }
 
-#pricing .item:hover, #pricing .active {
+.pricing .item:hover, .pricing .active {
   background-color: #fff;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-#pricing .item:hover .price, #pricing .active .price {
+.pricing .item:hover .price, .pricing .active .price {
   color: #ffffff;
   background-image: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f21780));
   background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
 }
 
-#pricing .item:hover .price:after, #pricing .active .price:after {
+.pricing .item:hover .price:after, .pricing .active .price:after {
   border-bottom: 72px solid #ffffff;
 }
 
-#pricing .item:hover .price:before, #pricing .active .price:before {
+.pricing .item:hover .price:before, .pricing .active .price:before {
   border-bottom: 72px solid #ffffff;
 }
 
-#pricing .item:hover .btn-buy, #pricing .active .btn-buy {
+.pricing .item:hover .btn-buy, .pricing .active .btn-buy {
   border: 3px solid rgba(0, 0, 0, 0.1);
   background: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f21780));
   background: linear-gradient(to right, #fd712c 0%, #f21780 100%);
@@ -452,11 +452,11 @@ button:hover {
   color: #ffffff;
 }
 
-#video {
+.video {
   height: 400px;
 }
 
-#video .video_wrapper {
+.video .video_wrapper {
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -464,11 +464,11 @@ button:hover {
   background-color: #000;
 }
 
-#video .video_wrapper_full {
+.video .video_wrapper_full {
   padding-top: 315px;
 }
 
-#video .videoIframe {
+.video .videoIframe {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -479,7 +479,7 @@ button:hover {
   background-color: transparent;
 }
 
-#video .videoPoster {
+.video .videoPoster {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -497,7 +497,7 @@ button:hover {
   transition-delay: 0s, 0s;
 }
 
-#video .videoPoster i {
+.video .videoPoster i {
   color: #ffffff;
   width: 75px;
   height: 75px;
@@ -509,28 +509,28 @@ button:hover {
   text-align: center;
 }
 
-#video .videoPoster i:before {
+.video .videoPoster i:before {
   margin-left: 5px;
 }
 
-#video .videoPoster:hover {
+.video .videoPoster:hover {
   cursor: pointer;
 }
 
-#video .videoWrapperActive .videoPoster {
+.video .videoWrapperActive .videoPoster {
   opacity: 0;
   height: 0;
   -webkit-transition-delay: 0s, 800ms;
   transition-delay: 0s, 800ms;
 }
 
-#testimonials {
+.testimonials {
   padding-top: 120px;
   padding-bottom: 90px;
   text-align: center;
 }
 
-#testimonials h1 {
+.testimonials h1 {
   margin-bottom: 25px;
   color: #222222;
   font-family: 'Dosis', sans-serif;
@@ -539,7 +539,7 @@ button:hover {
   line-height: 30px;
 }
 
-#testimonials .subtitle {
+.testimonials .subtitle {
   width: 50vw;
   margin: 0 auto 67px;
   color: #777777;
@@ -548,7 +548,7 @@ button:hover {
   line-height: 24px;
 }
 
-#testimonials .item {
+.testimonials .item {
   margin: 0 20px;
   width: 360px;
   height: 273px;
@@ -559,25 +559,25 @@ button:hover {
   transition: all .5s;
 }
 
-#testimonials .item p {
+.testimonials .item p {
   color: #777777;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
 }
 
-#testimonials .item .customer {
+.testimonials .item .customer {
   padding-left: 100px;
   position: relative;
 }
 
-#testimonials .item .customer h1 {
+.testimonials .item .customer h1 {
   font-size: 18px;
   text-align: left;
   margin-bottom: 0;
 }
 
-#testimonials .item .customer span {
+.testimonials .item .customer span {
   color: #777777;
   font-size: 14px;
   font-weight: 300;
@@ -585,60 +585,60 @@ button:hover {
   text-align: left;
 }
 
-#testimonials .item .customer img {
+.testimonials .item .customer img {
   position: absolute;
   left: 0;
   top: 0;
 }
 
-#testimonials .item:hover, #testimonials #pricing .active, #pricing #testimonials .active {
+.testimonials .item:hover, .testimonials .pricing .active, .pricing .testimonials .active {
   background-color: #ffffff;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-#testimonials .slick-track {
+.testimonials .slick-track {
   padding-top: 10px;
   height: 313px;
 }
 
-#testimonials .slick-next, #testimonials .slick-prev {
+.testimonials .slick-next, .testimonials .slick-prev {
   width: 40px;
   height: 40px;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
 
-#testimonials .slick-next {
+.testimonials .slick-next {
   right: -60px;
   background-image: url("../img/right_arrow.png");
 }
 
-#testimonials .slick-next:hover {
+.testimonials .slick-next:hover {
   background-image: url("../img/right_arrow_hover.png");
 }
 
-#testimonials .slick-prev {
+.testimonials .slick-prev {
   left: -60px;
   background-image: url("../img/left_arrow.png");
 }
 
-#testimonials .slick-prev:hover {
+.testimonials .slick-prev:hover {
   background-image: url("../img/left_arrow_hover.png");
 }
 
-#testimonials .slick-next:before, #testimonials .slick-prev:before {
+.testimonials .slick-next:before, .testimonials .slick-prev:before {
   content: " " !important;
 }
 
-#download {
+.download {
   padding: 120px 0;
   background-color: #222222;
   background-image: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f21780));
   background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
 }
 
-#download h1 {
+.download h1 {
   margin-bottom: 90px;
   color: #ffffff;
   font-family: 'Dosis', sans-serif;
@@ -648,7 +648,7 @@ button:hover {
   text-align: center;
 }
 
-#download .item {
+.download .item {
   display: block;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -661,7 +661,7 @@ button:hover {
   position: relative;
 }
 
-#download .item h2 {
+.download .item h2 {
   margin-bottom: 6px;
   color: #222222;
   font-family: 'Dosis', sans-serif;
@@ -670,14 +670,14 @@ button:hover {
   line-height: 24px;
 }
 
-#download .item span {
+.download .item span {
   color: #777777;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
 }
 
-#download .item i {
+.download .item i {
   position: absolute;
   left: 0;
   top: 0;
@@ -692,8 +692,8 @@ button:hover {
   transition: all .5s;
 }
 
-#download .item:hover i, #download #pricing .active i, #pricing #download .active i {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, #fd712c), color-stop(70%, #f21780));
+.download .item:hover i, .download .pricing .active i, .pricing .download .active i {
+  /* background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, #fd712c), color-stop(70%, #f21780)); */
   background-image: linear-gradient(to right, #fd712c 40%, #f21780 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -725,33 +725,33 @@ footer p {
 }
 
 @media (max-width: 1400px) {
-  #screen-shots #next, #screen-shots #prev {
+  .screen-shots #next, .screen-shots #prev {
     display: none;
   }
 }
 
 @media (max-width: 1200px) and (min-width: 768px) {
-  #pricing .item {
+  .pricing .item {
     width: 170px;
   }
-  #pricing .item .price:after {
+  .pricing .item .price:after {
     border-left: 170px solid transparent;
   }
-  #pricing .item .price:before {
+  .pricing .item .price:before {
     border-right: 170px solid transparent;
   }
-  #download .item {
+  .download .item {
     padding-left: 75px;
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #download .item h2 {
+  .download .item h2 {
     font-size: 26px;
   }
-  #download .item span {
+  .download .item span {
     font-size: 14px;
   }
-  #download .item i {
+  .download .item i {
     width: 79px;
     line-height: 85px;
   }
@@ -764,7 +764,7 @@ footer p {
 }
 
 @media (max-width: 564px) {
-  #screen-shots #carousel img {
+  .screen-shots #carousel img {
     width: 320px;
     height: auto;
   }
@@ -774,74 +774,74 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  #banner .navbar li {
+  .banner .navbar li {
     margin-left: 5px !important;
   }
 }
 
 @media (max-width: 451px) {
-  #banner {
+  .banner {
     padding-bottom: 50px;
   }
-  #banner .header {
+  .banner .header {
     padding: 10px 0;
   }
-  #banner .navbar li .btn-download {
+  .banner .navbar li .btn-download {
     padding: 9px 15px !important;
   }
-  #banner .text {
+  .banner .text {
     margin-top: 50px;
   }
-  #banner .logo {
+  .banner .logo {
     margin-left: 15px !important;
   }
-  #banner ul {
+  .banner ul {
     margin-top: 20px  !important;
     margin-left: 15px !important;
   }
-  #dont-leave {
+  .dont-leave {
     margin: 60px 0;
   }
-  #dont-leave img {
+  .dont-leave img {
     width: 100%;
   }
-  #screen-shots {
+  .screen-shots {
     padding-top: 50px;
   }
-  #screen-shots #carousel {
+  .screen-shots #carousel {
     height: 500px;
   }
-  #screen-shots #carousel img {
+  .screen-shots #carousel img {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  #pricing {
+  .pricing {
     padding-top: 60px;
   }
-  #pricing p {
+  .pricing p {
     margin: 30px 0;
     width: 100%;
   }
-  #testimonials {
+  .testimonials {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  #testimonials .subtitle {
+  .testimonials .subtitle {
     width: 100%;
   }
-  #testimonials .item {
+  .testimonials .item {
     padding: 22px;
   }
-  #download {
+  .download {
     padding: 50px 0;
   }
-  #download h1 {
+  .download h1 {
     margin-bottom: 30px;
   }
-  #download .item {
+  .download .item {
     padding-left: 100px;
   }
-  #download .item i {
+  .download .item i {
     width: 100px;
   }
   footer {
