@@ -693,7 +693,7 @@ button:hover {
 }
 
 .download .item:hover i, .download .pricing .active i, .pricing .download .active i {
-  /* background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, #fd712c), color-stop(70%, #f21780)); */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, #fd712c), color-stop(70%, #f21780));
   background-image: linear-gradient(to right, #fd712c 40%, #f21780 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
