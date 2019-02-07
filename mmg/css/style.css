@@ -215,32 +215,43 @@ header .navbar-nav .btn-login {
   width: 200px;
   height: 65px;
 }
-#news {
+.news {
   padding-top: 84px;
   padding-bottom: 90px;
 }
-#news .item {
+.news .card {
+  width: 370px;
+  margin: 0 20px;
   box-shadow: 0 6px 12px rgba(32, 33, 39, 0.08);
 }
-#news .item h1 {
+.news .card__img {
+  margin: 8px;
+  margin-bottom: 36px;
+}
+.news .card__content {
+  margin: 0 16px 12px;
+}
+.news .card__title {
+  margin-bottom: 16px;
   color: #3c3c3c;
   font-size: 16px;
   font-weight: 700;
   line-height: 22.4px;
 }
-#news .item p {
+.news .card__text {
+  margin-bottom: 30px;
   color: #7f7f7f;
   font-size: 14px;
   font-weight: 400;
   line-height: 19.6px;
 }
-#news .item .date {
+.news .card__date {
   color: #a6a6a6;
   font-size: 12px;
   font-weight: 400;
   line-height: 19.6px;
 }
-#news .item .comment {
+.news .card__comment {
   color: #999999;
   font-size: 12px;
   font-weight: 400;

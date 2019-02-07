@@ -1,0 +1,9 @@
+{
+    "editor.tabSize": 2,
+    "files.autoSave": "afterDelay",
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "git.autofetch": true
+}
