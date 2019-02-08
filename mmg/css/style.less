@@ -1,7 +1,14 @@
-body {
+html, body {
+  // max-width: 1440px;
+  // margin: 0 auto;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+}
+
+header, section, footer {
   max-width: 1440px;
   margin: 0 auto;
-  font-family: "Open Sans", sans-serif;
 }
 
 header {
@@ -17,6 +24,9 @@ header {
       font-weight: 400;
       line-height: 49px;
       vertical-align: middle
+    }
+    .nav-link:first-child {
+      margin-left: 0;
     }
     .btn-login {
       padding: 14px 36px!important;
