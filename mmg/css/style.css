@@ -11,13 +11,12 @@ footer {
   margin: 0 auto;
 }
 header {
-  padding: 20px 0;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  padding: 6px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   background-color: #ffffff;
 }
 header .navbar-nav .nav-link {
-  margin-left: 60px;
+  margin-left: 35px;
   color: #3c3c3c;
   font-family: "Open Sans";
   font-size: 15px;
@@ -25,13 +24,21 @@ header .navbar-nav .nav-link {
   line-height: 49px;
   vertical-align: middle;
 }
-header .navbar-nav .nav-link:first-child {
-  margin-left: 0;
+header .navbar-nav .nav-link:hover {
+  color: #42b549;
+}
+header .navbar-nav .nav-link:hover:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  background-color: #42b549;
 }
 header .navbar-nav .btn-login {
-  padding: 14px 36px!important;
-  -webkit-box-shadow: 0 5px 7px rgba(30, 120, 233, 0.3);
-          box-shadow: 0 5px 7px rgba(30, 120, 233, 0.3);
+  padding: 9px 36px!important;
+  box-shadow: 0 5px 7px rgba(30, 120, 233, 0.3);
   background-color: #2c67b1;
   border-radius: 0;
   color: #ffffff;
@@ -122,8 +129,7 @@ header .navbar-nav .btn-login {
 }
 #slide .slider .slide-1 .btn-view {
   padding: 19px 25px;
-  -webkit-box-shadow: 0 5px 7px rgba(255, 0, 30, 0.3);
-          box-shadow: 0 5px 7px rgba(255, 0, 30, 0.3);
+  box-shadow: 0 5px 7px rgba(255, 0, 30, 0.3);
   background-color: #f4213a;
   color: #ffffff;
   font-size: 14px;
@@ -152,13 +158,11 @@ header .navbar-nav .btn-login {
   padding: 35px 75px;
   margin-right: 35px;
   margin-bottom: 10px;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 #functions .function:hover {
   background-color: #fff;
-  -webkit-box-shadow: 0 6px 12px rgba(32, 33, 39, 0.08);
-          box-shadow: 0 6px 12px rgba(32, 33, 39, 0.08);
+  box-shadow: 0 6px 12px rgba(32, 33, 39, 0.08);
   border-radius: 12px;
 }
 #functions .function i {
@@ -237,8 +241,7 @@ header .navbar-nav .btn-login {
 .news .card {
   width: 370px;
   margin: 0 20px;
-  -webkit-box-shadow: 0 6px 12px rgba(32, 33, 39, 0.08);
-          box-shadow: 0 6px 12px rgba(32, 33, 39, 0.08);
+  box-shadow: 0 6px 12px rgba(32, 33, 39, 0.08);
 }
 .news .card__img {
   margin: 8px;
@@ -276,19 +279,10 @@ header .navbar-nav .btn-login {
 .contact {
   padding: 90px 0 56px;
   background-image: url('../img/contact-bg.jpg');
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 .contact .contact__title {
@@ -311,13 +305,8 @@ header .navbar-nav .btn-login {
 }
 .contact .contact__form {
   width: 630px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .contact input,
 .contact textarea {
@@ -358,11 +347,9 @@ header .navbar-nav .btn-login {
   margin-bottom: 30px;
 }
 .contact button {
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   padding: 19px 63px;
-  -webkit-box-shadow: 0 6px 12px rgba(40, 43, 49, 0.08);
-          box-shadow: 0 6px 12px rgba(40, 43, 49, 0.08);
+  box-shadow: 0 6px 12px rgba(40, 43, 49, 0.08);
   border: 1px solid #ffffff;
   background-color: #040221;
   opacity: 0.7;
@@ -418,4 +405,12 @@ footer i {
   right: 100%;
   top: 5px;
   margin-right: 8px;
+}
+.black {
+  color: #000000;
+}
+@media (max-width: 1200px) {
+  header .navbar-nav .nav-link {
+    margin-left: 42px;
+  }
 }
