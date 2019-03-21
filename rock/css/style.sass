@@ -1,0 +1,384 @@
+@import rest
+body
+  min-width: 1280px
+.container
+  max-width: 1140px!important
+.button
+  padding: 17px 46px
+  border-radius: 25px
+  background-color: #df001f
+  color: #ffffff
+  font-family: "Droid Sans", sans-serif
+  font-size: 12px
+  font-weight: 700
+  line-height: 16px
+  text-transform: uppercase
+  letter-spacing: 1.2px
+  border: none
+  &--light
+    background-color: #ffffff
+    color: #df001f
+
+// header-top 
+.header-top
+  padding-left: 68px
+  padding-right: 50px
+  height: 100px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  color: #ffffff
+  font-family: "Droid Sans", sans-serif
+  font-size: 13px
+  font-weight: 700
+  line-height: 44px
+  text-transform: uppercase
+  letter-spacing: 0.65px
+  background-color: #df001f
+  a
+    color: #ffffff
+  &__socials
+    &-subs
+      margin-right: 10px
+    &-icon
+      margin-right: 10px
+  
+nav
+  .nav-list
+    list-style: none
+    margin: 0
+  .nav-item
+    display: inline-block
+
+// header promo
+.header-promo
+  height: 700px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background-image: url('../img/promo-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center center
+  &__title
+    margin-bottom: 90px
+    text-align: center
+    .title1
+      color: #df001f
+      font-family: "Oswald", sans-serif
+      font-size: 116px
+      font-weight: 800
+      line-height: 85.6px
+      text-transform: uppercase
+    .title2
+      color: #333333
+      font-family: "Great Vibes", sans-serif
+      font-size: 80px
+      font-weight: 400
+      line-height: 160.5px
+
+// introducing
+.introducing
+  padding-top: 103px
+  padding-bottom: 110px
+  border-bottom: 1px solid #dfdfdf
+  &__title
+    color: #333333
+    font-family: "Oswald", sans-serif
+    font-size: 32px
+    font-weight: 400
+    line-height: 30px
+    letter-spacing: 3.2px
+    text-transform: uppercase
+    span
+      color: #df001f
+      font-family: "Great Vibes", sans-serif
+      font-weight: 400
+      letter-spacing: 3.2px
+      text-transform: none
+  &__slider
+    position: relative
+    margin-right: -15px
+    margin-left: -15px
+    .slick-arrow
+      position: absolute
+      bottom: 100%
+      margin-bottom: 10px
+      width: 35px
+      height: 35px
+      background-color: #df001f
+      border: none
+      font-size: 0
+      &:before
+        display: inline-block
+        font-style: normal
+        font-variant: normal
+        text-rendering: auto
+        -webkit-font-smoothing: antialiased
+        font-family: "Font Awesome 5 Free"
+        font-weight: 900
+        font-size: 20px
+        color: #ffffff
+    .slick-next
+      right: 15px
+      &:before
+        content: "\f054"
+    .slick-prev
+      right: 55px
+      &:before
+        content: "\f053"
+    .slick-slide
+      width: 370px
+      height: 466px
+      margin-right: 15px
+      margin-left: 15px
+      position: relative
+      img
+        width: 100%
+        height: auto
+      .overlay
+        padding: 17px 27px
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        background-color: #df001f
+        overflow: hidden
+        width: 100%
+        height: 80px
+        transition: .5s ease
+        &__title
+          margin-bottom: 25px
+          color: #ffffff
+          font-family: "Oswald", sans-serif
+          font-size: 22px
+          font-weight: 400
+          line-height: 20px
+          span
+            font-family: "Droid Sans", sans-serif
+            font-size: 16px
+        &__social
+          color: #ffffff
+          font-family: "Droid Sans", sans-serif
+        &__social-item
+          display: inline-block
+          margin-right: 25px
+      &:hover .overlay 
+        bottom: 0
+        height: 130px
+
+.concert-videos
+  padding-top: 100px
+  padding-bottom: 100px
+
+// concert
+.concert
+  &__preview
+    display: inline-block
+    text-align: center
+  &__title
+    margin-bottom: 41px
+    color: #333333
+    font-family: "Oswald", sans-serif
+    font-size: 32px
+    font-weight: 400
+    line-height: 30px
+    letter-spacing: 3.2px
+    text-transform: uppercase
+    &--red
+      color: #df001f
+      font-family: "Great Vibes", sans-serif
+      text-transform: none
+  &__discription
+    padding: 5px 70px
+    &-title
+      margin-bottom: 20px
+      font-family: "Oswald", sans-serif
+      font-size: 22px
+      font-weight: 500
+      line-height: 30px
+    &-table
+      margin-bottom: 25px
+      color: #333333
+      font-family: "Droid Sans", sans-serif
+      font-size: 16px
+      font-weight: 400
+      line-height: 30px
+
+//videos
+.videos
+  &__title
+    margin-bottom: 41px
+    color: #333333
+    font-family: "Oswald", sans-serif
+    font-size: 32px
+    font-weight: 400
+    line-height: 30px
+    letter-spacing: 3.2px
+    text-transform: uppercase
+    &--red
+      color: #df001f
+      font-family: "Great Vibes", sans-serif
+      text-transform: none
+  &__slider
+    position: relative
+    margin-right: -15px
+    margin-left: -15px
+    .slick-arrow
+      position: absolute
+      bottom: 100%
+      margin-bottom: 10px
+      width: 35px
+      height: 35px
+      background-color: #df001f
+      border: none
+      font-size: 0
+      &:before
+        display: inline-block
+        font-style: normal
+        font-variant: normal
+        text-rendering: auto
+        -webkit-font-smoothing: antialiased
+        font-family: "Font Awesome 5 Free"
+        font-weight: 900
+        font-size: 20px
+        color: #ffffff
+    .slick-next
+      right: 15px
+      &:before
+        content: "\f054"
+    .slick-prev
+      right: 55px
+      &:before
+        content: "\f053"
+    .slick-slide
+      margin-right: 15px
+      margin-left: 15px
+      position: relative
+      img
+        width: 100%
+        height: auto
+  &__slide
+    position: relative
+    height: 270px
+  &__slide-play
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-left: -30px
+    margin-top: -30px
+    width: 60px
+    height: 60px
+    line-height: 60px
+    text-align: center
+    background-color: #df001f
+    color: #ffffff
+    border-radius: 50%
+
+.founder
+  padding-top: 86px
+  padding-bottom: 80px  
+  padding-left: 100px
+  color: #ffffff
+  background-color: #333333
+  background-image: url('../img/founder.png')
+  background-repeat: no-repeat
+  background-position: 100% 50%
+  &__content
+    width: 560px
+  &__title
+    color: #ffffff
+    font-family: "Oswald", sans-serif
+    font-size: 32px
+    font-weight: 500
+    line-height: 40px
+    text-transform: uppercase
+  &__subtitle
+    font-size: 22px
+    line-height: 20px
+    font-family: "Droid Sans", sans-serif
+    line-height: 40px
+    &--logo
+      font-family: "Great Vibes", sans-serif
+      font-weight: 400
+      line-height: 30px
+      font-size: 50px
+
+
+.table
+  td
+    padding: 3px 0
+    border: none
+  &-label
+    position: relative
+    &:after
+      position: absolute
+      content: ":"
+      left: 100%
+      margin-left: -10px
+
+.subscribe
+  padding-top: 105px
+  padding-bottom: 70px
+  text-align: center
+  &__form
+    padding-bottom: 15px
+    display: inline-block
+    border-bottom: 4px solid #999999
+  &__input
+    width: 500px
+    border: none
+    &::placeholder
+      color: #282828
+      font-family: "Droid Sans", sans-serif
+      font-size: 16px
+      font-weight: 400
+      line-height: 24.88px
+      letter-spacing: 3.2px
+    &:focus
+      border: none
+      outline: none !important
+  &__button
+    width: 14px
+    height: 14px
+    line-height: 14px
+    background-color: #fff
+    color: #df001f
+    border: none
+    font-size: 16px
+
+// footer
+.footer
+  &__content
+    padding-top: 70px
+    padding-bottom: 90px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    border-top: 1px solid #d2d2d2
+  &__menu
+    list-style: none
+    color: #333333
+    font-family: "Droid Sans", sans-serif
+    font-size: 13px
+    font-weight: 400
+    line-height: 44px
+    text-transform: uppercase
+    letter-spacing: 0.65px
+  &__menu-item
+    display: inline-block
+  &__menu-link
+    color: #333333
+    &:hover
+      color: #333333
+  &__copy
+    font-family: "Droid Sans", sans-serif
+    letter-spacing: 0.65px   
+    font-size: 13px
+    span
+      color: #df001f
+      font-family: "Great Vibes", sans-serif
+      font-size: 28px
+      font-weight: 400
+      letter-spacing: 1.4px

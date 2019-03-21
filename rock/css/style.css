@@ -1,0 +1,562 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 1280px;
+}
+
+.container {
+  max-width: 1140px !important;
+}
+
+.button {
+  padding: 17px 46px;
+  border-radius: 25px;
+  background-color: #df001f;
+  color: #ffffff;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  border: none;
+}
+
+.button--light {
+  background-color: #ffffff;
+  color: #df001f;
+}
+
+.header-top {
+  padding-left: 68px;
+  padding-right: 50px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 44px;
+  text-transform: uppercase;
+  letter-spacing: 0.65px;
+  background-color: #df001f;
+}
+
+.header-top a {
+  color: #ffffff;
+}
+
+.header-top__socials-subs {
+  margin-right: 10px;
+}
+
+.header-top__socials-icon {
+  margin-right: 10px;
+}
+
+nav .nav-list {
+  list-style: none;
+  margin: 0;
+}
+
+nav .nav-item {
+  display: inline-block;
+}
+
+.header-promo {
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../img/promo-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.header-promo__title {
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.header-promo__title .title1 {
+  color: #df001f;
+  font-family: "Oswald", sans-serif;
+  font-size: 116px;
+  font-weight: 800;
+  line-height: 85.6px;
+  text-transform: uppercase;
+}
+
+.header-promo__title .title2 {
+  color: #333333;
+  font-family: "Great Vibes", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 160.5px;
+}
+
+.introducing {
+  padding-top: 103px;
+  padding-bottom: 110px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.introducing__title {
+  color: #333333;
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.introducing__title span {
+  color: #df001f;
+  font-family: "Great Vibes", sans-serif;
+  font-weight: 400;
+  letter-spacing: 3.2px;
+  text-transform: none;
+}
+
+.introducing__slider {
+  position: relative;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.introducing__slider .slick-arrow {
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 10px;
+  width: 35px;
+  height: 35px;
+  background-color: #df001f;
+  border: none;
+  font-size: 0;
+}
+
+.introducing__slider .slick-arrow:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.introducing__slider .slick-next {
+  right: 15px;
+}
+
+.introducing__slider .slick-next:before {
+  content: "\f054";
+}
+
+.introducing__slider .slick-prev {
+  right: 55px;
+}
+
+.introducing__slider .slick-prev:before {
+  content: "\f053";
+}
+
+.introducing__slider .slick-slide {
+  width: 370px;
+  height: 466px;
+  margin-right: 15px;
+  margin-left: 15px;
+  position: relative;
+}
+
+.introducing__slider .slick-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.introducing__slider .slick-slide .overlay {
+  padding: 17px 27px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #df001f;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.introducing__slider .slick-slide .overlay__title {
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.introducing__slider .slick-slide .overlay__title span {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 16px;
+}
+
+.introducing__slider .slick-slide .overlay__social {
+  color: #ffffff;
+  font-family: "Droid Sans", sans-serif;
+}
+
+.introducing__slider .slick-slide .overlay__social-item {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.introducing__slider .slick-slide:hover .overlay {
+  bottom: 0;
+  height: 130px;
+}
+
+.concert-videos {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.concert__preview {
+  display: inline-block;
+  text-align: center;
+}
+
+.concert__title {
+  margin-bottom: 41px;
+  color: #333333;
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.concert__title--red {
+  color: #df001f;
+  font-family: "Great Vibes", sans-serif;
+  text-transform: none;
+}
+
+.concert__discription {
+  padding: 5px 70px;
+}
+
+.concert__discription-title {
+  margin-bottom: 20px;
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.concert__discription-table {
+  margin-bottom: 25px;
+  color: #333333;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.videos__title {
+  margin-bottom: 41px;
+  color: #333333;
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.videos__title--red {
+  color: #df001f;
+  font-family: "Great Vibes", sans-serif;
+  text-transform: none;
+}
+
+.videos__slider {
+  position: relative;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.videos__slider .slick-arrow {
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 10px;
+  width: 35px;
+  height: 35px;
+  background-color: #df001f;
+  border: none;
+  font-size: 0;
+}
+
+.videos__slider .slick-arrow:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.videos__slider .slick-next {
+  right: 15px;
+}
+
+.videos__slider .slick-next:before {
+  content: "\f054";
+}
+
+.videos__slider .slick-prev {
+  right: 55px;
+}
+
+.videos__slider .slick-prev:before {
+  content: "\f053";
+}
+
+.videos__slider .slick-slide {
+  margin-right: 15px;
+  margin-left: 15px;
+  position: relative;
+}
+
+.videos__slider .slick-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.videos__slide {
+  position: relative;
+  height: 270px;
+}
+
+.videos__slide-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -30px;
+  margin-top: -30px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #df001f;
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+.founder {
+  padding-top: 86px;
+  padding-bottom: 80px;
+  padding-left: 100px;
+  color: #ffffff;
+  background-color: #333333;
+  background-image: url("../img/founder.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+.founder__content {
+  width: 560px;
+}
+
+.founder__title {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.founder__subtitle {
+  font-size: 22px;
+  line-height: 20px;
+  font-family: "Droid Sans", sans-serif;
+  line-height: 40px;
+}
+
+.founder__subtitle--logo {
+  font-family: "Great Vibes", sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 50px;
+}
+
+.table td {
+  padding: 3px 0;
+  border: none;
+}
+
+.table-label {
+  position: relative;
+}
+
+.table-label:after {
+  position: absolute;
+  content: ":";
+  left: 100%;
+  margin-left: -10px;
+}
+
+.subscribe {
+  padding-top: 105px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.subscribe__form {
+  padding-bottom: 15px;
+  display: inline-block;
+  border-bottom: 4px solid #999999;
+}
+
+.subscribe__input {
+  width: 500px;
+  border: none;
+}
+
+.subscribe__input::-webkit-input-placeholder {
+  color: #282828;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24.88px;
+  letter-spacing: 3.2px;
+}
+
+.subscribe__input:-ms-input-placeholder {
+  color: #282828;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24.88px;
+  letter-spacing: 3.2px;
+}
+
+.subscribe__input::-ms-input-placeholder {
+  color: #282828;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24.88px;
+  letter-spacing: 3.2px;
+}
+
+.subscribe__input::placeholder {
+  color: #282828;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24.88px;
+  letter-spacing: 3.2px;
+}
+
+.subscribe__input:focus {
+  border: none;
+  outline: none !important;
+}
+
+.subscribe__button {
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  background-color: #fff;
+  color: #df001f;
+  border: none;
+  font-size: 16px;
+}
+
+.footer__content {
+  padding-top: 70px;
+  padding-bottom: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 1px solid #d2d2d2;
+}
+
+.footer__menu {
+  list-style: none;
+  color: #333333;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 44px;
+  text-transform: uppercase;
+  letter-spacing: 0.65px;
+}
+
+.footer__menu-item {
+  display: inline-block;
+}
+
+.footer__menu-link {
+  color: #333333;
+}
+
+.footer__menu-link:hover {
+  color: #333333;
+}
+
+.footer__copy {
+  font-family: "Droid Sans", sans-serif;
+  letter-spacing: 0.65px;
+  font-size: 13px;
+}
+
+.footer__copy span {
+  color: #df001f;
+  font-family: "Great Vibes", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+}
+/*# sourceMappingURL=style.css.map */
