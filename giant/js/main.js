@@ -3,9 +3,9 @@
 var anchorLinks = [
   document.querySelector('a[href="#features"]'),
   document.querySelector('a[href="#pricing"]')
-]
+];
 
-anchorLinks.forEach(anchor => {
+anchorLinks.forEach(function (anchor) {
   anchor.addEventListener('click', function (e) {
       e.preventDefault();
 
