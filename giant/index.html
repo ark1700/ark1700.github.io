@@ -1,336 +1,437 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Gian</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- slick slider -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <title>Giant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/dosis-v17-latin-500.woff" as="font">
+    <link rel="preload" href="fonts/dosis-v17-latin-500.woff2" as="font">
+    <link rel="preload" href="fonts/dosis-v17-latin-700.woff2" as="font">
+    <link rel="preload" href="fonts/dosis-v17-latin-700.woff" as="font">
+    <link rel="preload" href="fonts/dosis-v17-latin-regular.woff" as="font">
+    <link rel="preload" href="fonts/dosis-v17-latin-regular.woff2" as="font">
+    <link rel="preload" href="fonts/roboto-v20-latin-300.woff" as="font">
+    <link rel="preload" href="fonts/roboto-v20-latin-300.woff2" as="font">
+    <link rel="preload" href="fonts/roboto-v20-latin-500.woff" as="font">
+    <link rel="preload" href="fonts/roboto-v20-latin-500.woff2" as="font">
+    <link rel="preload" href="fonts/roboto-v20-latin-regular.woff" as="font">
+    <link rel="preload" href="fonts/roboto-v20-latin-regular.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <!-- banner -->
-    <section id="banner" class="banner">
-      <div class="container">
-        <!-- logo + navbar -->
-        <div class="row justify-content-between header">
-          <div class="logo">
-            <img src="img/Logo.png" alt="logo">
-            <span class="logo">Giant</span>
-          </div>
-          <div class="navbar">
-            <ul class="list-unstyled">
-              <li><a href="#">Home</a></li>
-              <li><a href="#features">Features</a></li>
-              <li><a href="#pricing">Pricing</a></li>
-              <li><a href="#download" class="btn-download">Download Now</a></li>
+    <div style="display: none;">
+      <svg>
+        <symbol viewBox="0 0 448 512" id="arrow-right">
+          <path d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path>
+        </symbol>
+        <symbol viewBox="0 0 448 512" id="arrow-left">
+          <path d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"></path>
+        </symbol>
+        <symbol viewBox="0 0 256 512" id="arrow-up">
+          <path d="M88 166.059V468c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12V166.059h46.059c21.382 0 32.09-25.851 16.971-40.971l-86.059-86.059c-9.373-9.373-24.569-9.373-33.941 0l-86.059 86.059c-15.119 15.119-4.411 40.971 16.971 40.971H88z"></path>
+        </symbol>
+        <symbol viewBox="0 0 512.12 512.12" id="android-icon">
+          <g>
+            <path d="M74.727,170.787c-17.673,0-32,14.327-32,32V352.12c0,17.673,14.327,32,32,32s32-14.327,32-32
+              V202.787C106.727,185.114,92.4,170.787,74.727,170.787z"></path>
+            <path d="M437.393,170.787c-17.673,0-32,14.327-32,32V352.12c0,17.673,14.327,32,32,32s32-14.327,32-32
+              V202.787C469.393,185.114,455.067,170.787,437.393,170.787z"></path>
+            <path d="M373.393,170.787H138.727c-5.891,0-10.667,4.776-10.667,10.667V352.12
+              c-0.005,25.348,17.831,47.197,42.667,52.267v75.733c0,17.673,14.327,32,32,32s32-14.327,32-32v-74.667h42.667v74.667
+              c0,17.673,14.327,32,32,32s32-14.327,32-32v-75.733c24.836-5.07,42.672-26.919,42.667-52.267V181.454
+              C384.06,175.563,379.284,170.787,373.393,170.787z"></path>
+            <path d="M333.607,44.323l26.005-25.984c4.237-4.093,4.354-10.845,0.262-15.083
+              c-4.093-4.237-10.845-4.354-15.083-0.262c-0.089,0.086-0.176,0.173-0.262,0.262L314.236,33.55
+              c-37.102-16.117-79.229-16.117-116.331,0L167.612,3.235c-4.237-4.093-10.99-3.975-15.083,0.262c-3.992,4.134-3.992,10.687,0,14.82
+              l25.984,26.005c-31.677,20.96-50.649,56.481-50.453,94.464c0,5.891,4.776,10.667,10.667,10.667h234.667
+              c5.891,0,10.667-4.776,10.667-10.667C384.256,100.804,365.284,65.283,333.607,44.323z"></path>
+              <circle style="fill: #fafafa;" cx="202.727" cy="96.12" r="10.667"></circle>
+              <circle style="fill: #fafafa;" cx="309.393" cy="96.12" r="10.667"></circle>
+          </g>
+
+        </symbol>
+        <symbol viewBox="0 0 448 512" id="apple-icon">
+          <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path>
+        </symbol>
+        <symbol viewBox="0 0 448 512" id="windows-icon">
+          <path d="M0 93.7l183.6-25.3v177.4H0V93.7zm0 324.6l183.6 25.3V268.4H0v149.9zm203.8 28L448 480V268.4H203.8v177.9zm0-380.6v180.1H448V32L203.8 65.7z"></path>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="fb-icon">
+          <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"></path>
+        </symbol>
+        <symbol viewBox="0 0 512 512" id="twi-icon">
+          <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+          c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+          c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+          c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+          c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+          c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+          C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+          C480.224,136.96,497.728,118.496,512,97.248z"></path>
+        </symbol>
+        <symbol viewBox="0 0 512 512" id="dribble-icon">
+          <path d="M256,0C115.04,0,0,115.05,0,256c0,140.96,115.05,256,256,256c140.96,0,256-115.05,256-256C512,115.04,396.95,0,256,0z   M429.64,111.51c31.96,38.34,51.47,87.39,52.31,140.89c-40.06-9.37-84.55-10-129.86-1.74c-11.79,2.15-23.58,4.88-35.3,8.16  c-3.9-10.61-8.04-21.13-12.44-31.55c-4.49-10.63-9.23-21.08-14.19-31.38C344.15,175.27,402.65,144.57,429.64,111.51z M256,30  c58.82,0,112.45,22.59,152.7,59.54C393,110.95,348.26,142.12,276.48,169c-25.06-46.66-55.11-89.54-89.83-128.1  C208.51,33.83,231.82,30,256,30z M156.95,52.9c35.41,37.93,65.87,80.29,90.96,126.05c-74.68,24.17-150.29,34.03-212.46,27.66  C50.59,138.96,96.14,82.67,156.95,52.9z M30,256c0-6.64,0.31-13.21,0.87-19.7c13.72,1.45,28.03,2.18,42.82,2.18  c58.33,0,123.86-11.22,188.21-32.53c9.82,20.1,18.65,40.78,26.44,61.97c-25.09,9.02-49.51,20.49-72.44,34.14  c-56.22,33.47-97.35,76.53-114.41,118.71C57.52,379.51,30,320.91,30,256z M256,482c-48.29,0-93.09-15.23-129.86-41.14  c11.4-38.52,49.96-80.19,105.11-113.02c19.43-11.58,42.15-22.49,66.88-31.36c17.53,55.1,28.27,113.26,31.68,173.13  C306.67,477.63,281.84,482,256,482z M359.07,457.1c-4.16-58.32-15.02-115.1-32.45-169.64c48.6-13.36,102.58-17.84,153.77-4.56  C471.33,358.91,424.41,423.47,359.07,457.1z"></path>
+        </symbol>
+        <symbol viewBox="0 0 95.802 95.802" id="be-icon">
+          <path d="M38.664,44.689c0,0,9.065-0.673,9.065-11.306c0-10.632-7.417-15.819-16.813-15.819H13.622h-0.508H0v59.414h13.114h0.508
+          h17.294c0,0,18.873,0.597,18.873-17.536C49.79,59.442,50.613,44.689,38.664,44.689z M13.622,28.125h15.069h2.226
+          c0,0,4.203,0,4.203,6.181c0,6.181-2.473,7.077-5.275,7.077H13.622V28.125z M30.119,66.42H13.622V50.541h17.294
+          c0,0,6.264-0.08,6.264,8.16C37.18,65.572,32.599,66.351,30.119,66.42z"></path>
+          <rect x="62.18" y="21.064" width="24.514" height="7.317"></rect>
+          <path d="M74.961,32.682c-22.848,0-22.828,22.826-22.828,22.826s-1.566,22.713,22.829,22.713c0,0,20.331,1.162,20.331-15.801
+            H84.837c0,0,0.349,6.391-9.526,6.391c0,0-10.455,0.699-10.455-10.34h30.785C95.641,58.471,99.009,32.682,74.961,32.682z
+            M84.255,50.541H64.738c0,0,1.277-9.158,10.455-9.158C84.372,41.382,84.255,50.541,84.255,50.541z"></path>
+        </symbol>
+      </svg>
+
+    </div>
+    <header class="header">
+      <div class="header__top-wrap">
+        <div class="header__logo">
+          <img src="img/Logo.png" alt="logo" class="header__logo-img">
+        </div>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Home</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#features" class="header__nav-link">Features</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#pricing" class="header__nav-link">Pricing</a>
+          </li>
+
+        </ul>
+        <a href="#" class="header__download">Download Now</a>
+      </div>
+      <div class="header__promo promo">
+        <div class="promo__wrap">
+          <div class="promo__content">
+            <h2 class="promo__title">A Powerful & Unique<br>App Landing Template</h2>
+            <p class="promo__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ul class="promo__list">
+              <li class="promo__item">Unlimited colors: banner with images, slider or video</li>
+              <li class="promo__item">Fully Responsive and powered by HTML5 and CSS3</li>
+              <li class="promo__item">Very easy to customize : set up in minutes</li>
             </ul>
+            <a href="#" class="promo__link">Start Exploring Us</a>
           </div>
         </div>
-        <!-- text + banner -->
-        <div class="row">
-          <div class="col-lg-6 col-md-9 text">
-            <h1>A Powerful & Unique<br>App Landing Template</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis similique exercitationem atque illum pariatur
-              voluptate.</p>
-            <ul>
-              <li><i class="fas fa-check-circle"></i>Unlimited colors: banner with images, slider or video</li>
-              <li><i class="fas fa-check-circle"></i>Fully Responsive and powered by HTML5 and CSS3</li>
-              <li><i class="fas fa-check-circle"></i>Very easy to customize : set up in minutes</li>
+      </div>
+    </header>
+    <section class="features" id="features">
+      <ul class="features__wrap features__list">
+        <li class="features__item features__item--tag">
+          <h3 class="features__title">Sell any product online</h3>
+          <p class="features__descr">Over 92% of computers are infected with Adware and spyware. Such software is</p>
+        </li>
+        <li class="features__item features__item--cog">
+          <h3 class="features__title">Very easy to customize</h3>
+          <p class="features__descr">Many of us are so used to working on a computer desktop that when it comes </p>
+        </li>
+        <li class="features__item features__item--brush">
+          <h3 class="features__title">Unlimited colors</h3>
+          <p class="features__descr">Audio player software is used to play back sound recordings in one of the many </p>
+        </li>
+        <li class="features__item features__item--fire-exting">
+          <h3 class="features__title">Responsive, HTML5, CSS3</h3>
+          <p class="features__descr">Computers have become ubiquitous in almost every facet of our lives. At work</p>
+        </li>
+        <li class="features__item features__item--file">
+          <h3 class="features__title">Designed to convert</h3>
+          <p class="features__descr">OIf you are looking for a new way to promote your business that won’t cost</p>
+        </li>
+        <li class="features__item features__item--life-ring">
+          <h3 class="features__title">With no boundaries</h3>
+          <p class="features__descr">Now, if you are interested in being the best player, getting really good money and</p>
+        </li>
+      </ul>
+    </section>
+    <section class="dont-leave">
+      <div class="dont-leave__wrap">
+        <div class="dont-leave__text">
+          <h2 class="dont-leave__title">We don’t leave you stranded</h2>
+          <p class="dont-leave__descr">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+          <p class="dont-leave__descr">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill? If you’re already a developer, or a PM, or a UX designer.</p>
+          <ul class="dont-leave__list">
+            <li class="dont-leave__item">Unlimited colors: banner with images, slider or video</li>
+            <li class="dont-leave__item">Fully Responsive and powered by HTML5 and CSS3</li>
+            <li class="dont-leave__item">Very easy to customize : set up in minutes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="screenshots">
+      <div class="screenshots__wrap">
+        <h2 class="screenshots__title">Take a look at our screenshots</h2>
+        <p class="screenshots__descr">
+          Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?
+        </p>
+        <div class="screenshots__slider slider" id="screenshots-carousel">
+          <img class="screenshots__slider-img" src="./img/slider-1.jpg" alt="Screenshot">
+          <img class="screenshots__slider-img" src="./img/slider-2.jpg" alt="Screenshot">
+          <img class="screenshots__slider-img" src="./img/slider-3.jpg" alt="Screenshot">
+          <img class="screenshots__slider-img" src="./img/slider-4.jpg" alt="Screenshot">
+          <img class="screenshots__slider-img" src="./img/slider-5.jpg" alt="Screenshot">
+          <img class="screenshots__slider-img" src="./img/slider-6.jpg" alt="Screenshot">
+          <img class="screenshots__slider-img" src="./img/slider-7.jpg" alt="Screenshot">
+          <button class="screenshots__next btn" id="screenshots-carusel-btn-next">
+            Next
+            <svg class="btn__icon" width="30" height="14"><use xlink:href="#arrow-right"></use></svg>
+          </button>
+          <button class="screenshots__prev btn" id="screenshots-carusel-btn-prev">
+            Previous
+            <svg class="btn__icon" width="30" height="14"><use xlink:href="#arrow-left"></use></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="pricing" id="pricing">
+      <div class="pricing__wrap">
+        <h2 class="pricing__title">We've got the perfect package for you</h2>
+        <p class="pricing__descr">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+        <ul class="pricing__list">
+          <li class="pricing__item pricing-card">
+            <h3 class="pricing-card__title">Basic</h3>
+            <p class="pricing-card__price">
+              <span class="pricing-card__price-dollar">&#36;</span>12.0<span span="" class="pricing-card__price-month">/m</span>
+            </p>
+            <ul class="pricing-card__list">
+              <li class="pricing-card__item">One user</li>
+              <li class="pricing-card__item">Multiple Access</li>
+              <li class="pricing-card__item">SMS Support</li>
+              <li class="pricing-card__item">24/7 Online Support</li>
             </ul>
-            <button class="btn-start">Start Exploring Us</button>
-          </div>
-          
-        </div>
-      </div>
-      <div class="banner-picture"></div>
-    </section>
-
-    <!-- features -->
-    <section id="features" class="features">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="item">
-              <h2>Sell any product online</h2>
-              <p>Over 92% of computers are infected with Adware and spyware. Such software is </p>
-              <div class="icon"><i class="fas fa-tags"></i></div>
+            <div class="pricing-card__buttons">
+              <a href="#" class="pricing-card__trial-link">Start Free Trial</a>
+              <a href="#" class="pricing-card__buy-link">Buy Now</a>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="item">
-              <h2>Very easy to customize</h2>
-              <p>Many of us are so used to working on a computer desktop that when it comes</p>
-              <div class="icon"><i class="fas fa-cog"></i></div>
+          </li>
+          <li class="pricing__item pricing-card pricing-card--active">
+            <h3 class="pricing-card__title">Standard</h3>
+            <p class="pricing-card__price">
+              <span class="pricing-card__price-dollar">&#36;</span>24.0<span span="" class="pricing-card__price-month">/m</span>
+            </p>
+            <ul class="pricing-card__list">
+              <li class="pricing-card__item">Five User</li>
+              <li class="pricing-card__item">Multiple Access</li>
+              <li class="pricing-card__item">SMS Support</li>
+              <li class="pricing-card__item">24/7 Online Support</li>
+            </ul>
+            <div class="pricing-card__buttons">
+              <a href="#" class="pricing-card__trial-link">Start Free Trial</a>
+              <a href="#" class="pricing-card__buy-link">Buy Now</a>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="item">
-              <h2>Unlimited colors</h2>
-              <p>Audio player software is used to play back sound recordings in one of the many</p>
-              <div class="icon"><i class="fas fa-paint-brush"></i></div>
+          </li>
+          <li class="pricing__item pricing-card">
+            <h3 class="pricing-card__title">Premium</h3>
+            <p class="pricing-card__price">
+              <span class="pricing-card__price-dollar">&#36;</span>250.0<span span="" class="pricing-card__price-month">/m</span>
+            </p>
+            <ul class="pricing-card__list">
+              <li class="pricing-card__item">Twenty User</li>
+              <li class="pricing-card__item">Multiple Access</li>
+              <li class="pricing-card__item">SMS Support</li>
+              <li class="pricing-card__item">24/7 Online Support</li>
+            </ul>
+            <div class="pricing-card__buttons">
+              <a href="#" class="pricing-card__trial-link">Start Free Trial</a>
+              <a href="#" class="pricing-card__buy-link">Buy Now</a>
             </div>
-          </div>  
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="item">
-              <h2>Responsive, HTML5, CSS3</h2>
-              <p>Computers have become ubiquitous in almost every facet of our lives. At work,</p>
-              <div class="icon"><i class="fas fa-fire-extinguisher"></i></div>
+          </li>
+          <li class="pricing__item pricing-card">
+            <h3 class="pricing-card__title">Enterprise</h3>
+            <p class="pricing-card__price">
+              <span class="pricing-card__price-dollar">&#36;</span>999.0<span span="" class="pricing-card__price-month">/m</span>
+            </p>
+            <ul class="pricing-card__list">
+              <li class="pricing-card__item">Unlimited User</li>
+              <li class="pricing-card__item">Multiple Access</li>
+              <li class="pricing-card__item">SMS Support</li>
+              <li class="pricing-card__item">24/7 Online Support</li>
+            </ul>
+            <div class="pricing-card__buttons">
+              <a href="#" class="pricing-card__trial-link">Start Free Trial</a>
+              <a href="#" class="pricing-card__buy-link">Buy Now</a>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="item">
-              <h2>Designed to convert</h2>
-              <p>If you are looking for a new way to promote your business that won’t cost</p>
-              <div class="icon"><i class="fas fa-file-alt"></i></div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="item">
-              <h2>With no boundaries</h2>
-              <p>Now, if you are interested in being the best player, getting really good money and </p>
-              <div class="icon"><i class="far fa-life-ring"></i></div>
-            </div>
-          </div>
-        </div>
-        <div class="line"></div>
+          </li>
+        </ul>
       </div>
     </section>
-
-    <!-- dont-leave -->
-    <section id="dont-leave" class="dont-leave">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 wow sideInLeft">
-            <img src="img/dont-leave-iphone.png" alt="img">
-          </div>
-          <div class="col-md-6 offset-md-2 wow sideInRight">
-            <div class="title">
-              <h1>We don’t leave you stranded</h1>
-              <p>Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM,
-                or a UX
-                designer, why develop this totally separate skill?</p>
-            </div>
-            <div class="content">
-              <p>Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM,
-                or a UX
-                designer, why develop this totally separate skill? If you’re already a developer, or a PM, or a UX designer.</p>
-              <ul>
-                <li><i class="fas fa-check-circle"></i>Unlimited colors: banner with images, slider or video</li>
-                <li><i class="fas fa-check-circle"></i>Fully Responsive and powered by HTML5 and CSS3</li>
-                <li><i class="fas fa-check-circle"></i>Very easy to customize : set up in minutes</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section class="video">
+      <button class="video__btn">Play</button>
     </section>
-
-    <!-- screen-shots -->
-    <section id="screen-shots" class="screen-shots">
-      <div class="container">
-        <h1>Take a look at our screenshots</h1>
-        <p>Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a<br>
-        UX designer, why develop this totally separate skill?</p>
-        <div id="carousel" class="slider">
-          <img src="img/screen-shot-4.png" alt="img">
-          <img src="img/screen-shot-5.png" alt="img">
-          <img src="img/screen-shot-6.png" alt="img">
-          <img src="img/screen-shot-7.png" alt="img">
-          <img src="img/screen-shot-1.png" alt="img">
-          <img src="img/screen-shot-2.png" alt="img">
-          <img src="img/screen-shot-3.png" alt="img">
-        </div>
-        <a href="#" id="prev">prev</a><a href="#" id="next">next</a>
-      </div>
-    </section>
-
-    <!-- pricing -->
-    <section id="pricing" class="pricing">
-      <div class="container">
-        <h1>We've got the perfect package for you</h1>
-        <p>Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX
-          designer, why develop this totally separate skill?</p>
-        <div class="row">
-          <div class="col-md-3">
-            <div class="item">
-              <h4>Basic</h4>
-              <div class="price"><sup>$</sup>12.0<sub>/m</sub></div>
-              <ul>
-                <li>One User</li>
-                <li>Multiple Access</li>
-                <li>SMS Support</li>
-                <li>24/7 Online Support</li>
-              </ul>
-              <a href="#" class="start">Start Free Trial</a>
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="item active">
-              <h4>Standard</h4>
-              <div class="price"><sup>$</sup>24.0<sub>/m</sub></div>
-              <ul>
-                <li>Five User</li>
-                <li>Multiple Access</li>
-                <li>SMS Support</li>
-                <li>24/7 Online Support</li>
-              </ul>
-              <a href="#download" class="start">Start Free Trial</a>
-              <a href="#download" class="btn-buy">Buy Now</a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="item">
-              <h4>Premium</h4>
-              <div class="price"><sup>$</sup>250.0<sub>/m</sub></div>
-              <ul>
-                <li>Twenty User</li>
-                <li>Multiple Access</li>
-                <li>SMS Support</li>
-                <li>24/7 Online Support</li>
-              </ul>
-              <a href="#download" class="start">Start Free Trial</a>
-              <a href="#download" class="btn-buy">Buy Now</a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="item">
-              <h4>Enterprise</h4>
-              <div class="price"><sup>$</sup>999.0<sub>/m</sub></div>
-              <ul>
-                <li>Unlimited User</li>
-                <li>Multiple Access</li>
-                <li>SMS Support</li>
-                <li>24/7 Online Support</li>
-              </ul>
-              <a href="#download" class="start">Start Free Trial</a>
-              <a href="#download" class="btn-buy">Buy Now</a>
-            </div>
-          </div>
+    <section class="testimonials">
+      <div class="testimonials__wrap">
+        <h2 class="testimonials__title">What our customers are saying</h2>
+        <p class="testimonials__descr">
+          Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?
+        </p>
+        <div class="testimonials__slider">
+          <ul class="testimonials__list" id="testimonials-carousel">
+            <li class="testimonials__item feedback">
+              <p class="feedback__text">
+                The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.
+              </p>
+              <div class="feedback__profile">
+                <img src="./img/avatar-1.png" alt="avatar" class="feedback__avatar">
+                <div class="feedback__reviewer">
+                  <span class="feedback__name">Alexandra Bullock</span>
+                  <span class="feedback__job">Apple Inc.</span>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials__item feedback">
+              <p class="feedback__text">
+                Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.
+              </p>
+              <div class="feedback__profile">
+                <img src="./img/avatar-2.png" alt="avatar" class="feedback__avatar">
+                <div class="feedback__reviewer">
+                  <span class="feedback__name">Gary Sebastian</span>
+                  <span class="feedback__job">Apple Inc.</span>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials__item feedback">
+              <p class="feedback__text">
+                Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.
+              </p>
+              <div class="feedback__profile">
+                <img src="./img/avatar-3.png" alt="avatar" class="feedback__avatar">
+                <div class="feedback__reviewer">
+                  <span class="feedback__name">Samantha Bilbau</span>
+                  <span class="feedback__job">Apple Inc.</span>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials__item feedback">
+              <p class="feedback__text">
+                The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.
+              </p>
+              <div class="feedback__profile">
+                <img src="./img/avatar-1.png" alt="avatar" class="feedback__avatar">
+                <div class="feedback__reviewer">
+                  <span class="feedback__name">Alexandra Bullock</span>
+                  <span class="feedback__job">Apple Inc.</span>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials__item feedback">
+              <p class="feedback__text">
+                Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.
+              </p>
+              <div class="feedback__profile">
+                <img src="./img/avatar-2.png" alt="avatar" class="feedback__avatar">
+                <div class="feedback__reviewer">
+                  <span class="feedback__name">Gary Sebastian</span>
+                  <span class="feedback__job">Apple Inc.</span>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials__item feedback">
+              <p class="feedback__text">
+                Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.
+              </p>
+              <div class="feedback__profile">
+                <img src="./img/avatar-3.png" alt="avatar" class="feedback__avatar">
+                <div class="feedback__reviewer">
+                  <span class="feedback__name">Samantha Bilbau</span>
+                  <span class="feedback__job">Apple Inc.</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button class="testimonials__next btn" id="testimonials-carousel-btn-next">
+            Next
+            <svg class="btn__icon" width="30" height="14"><use xlink:href="#arrow-right"></use></svg>
+          </button>
+          <button class="testimonials__prev btn" id="testimonials-carousel-btn-prev">
+            Previous
+            <svg class="btn__icon" width="30" height="14"><use xlink:href="#arrow-left"></use></svg>
+          </button>
         </div>
       </div>
     </section>
-
-    <!-- video -->
-    <section id="video" class="video">
-      
-      <div class="video_wrapper video_wrapper_full js-videoWrapper">
-      
-        <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/G4cJ4wviwS8?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
-        <button class="videoPoster js-videoPoster"><i class="fas fa-play"></i></button>
-      </div>
-
-    </section>
-    
-    <!-- testimonials -->
-    <section id="testimonials" class="testimonials">
-      <h1>What our customers are saying</h1>
-      <p class="subtitle">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
-      <div class="container">
-        <div class="regular slider">
-          <div class="item">
-            <p>The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome:
-              super fast and reliable.</p>
-            <div class="customer">
-              <h1>Alexandra Bullock</h1>
-              <span>Apple Inc.</span>
-              <img src="img/customer-1.png" alt="cust">
-            </div>
-          </div>
-
-          <div class="item">
-            <p>Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and
-            developer support are.</p>
-            <div class="customer">
-              <h1>Gary Sebastian</h1>
-              <span>Apple Inc.</span>
-              <img src="img/customer-2.png" alt="cust">
-            </div>
-          </div>
-
-          <div class="item">
-            <p>Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got
-            this spot on. Cheers guys.</p>
-            <div class="customer">
-              <h1>Samantha Bilbau</h1>
-              <span>Apple Inc.</span>
-              <img src="img/customer-3.png" alt="cust">
-            </div>
-          </div>
-
-          <div class="item">
-            <p>Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and
-            developer support are.</p>
-            <div class="customer">
-              <h1>Gary Sebastian</h1>
-              <span>Apple Inc.</span>
-              <img src="img/customer-2.png" alt="cust">
-            </div>
-          </div>
-        </div>  
-      </div>
-    </section>
-
-    <!-- download -->
-    <section id="download" class="download">
-      <h1>Download Giant App Now</h1>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <a href="#" class="item">
-              <h2>Download</h2>
-              <span>Download from app store</span>
-              <i class="fab fa-apple"></i>
+    <section class="download">
+      <div class="download__wrap">
+        <h2 class="download__title">Download Giant App Now</h2>
+        <ul class="download__list">
+          <li class="download__item">
+            <a href="#" class="download__link">
+              <div class="download__img">
+                <svg class="download__icon" width="41" height="50"><use xlink:href="#apple-icon"></use></svg>
+              </div>
+              <div class="download__text">
+                <h3 class="download__header">Download</h3>
+                <p class="download__descr">Download from app store</p>
+              </div>
             </a>
-          </div>
-
-          <div class="col-md-4">
-            <a href="#" class="item">
-              <h2>Download</h2>
-              <span>Download from play store</span>
-              <i class="fab fa-android"></i>
+          </li>
+          <li class="download__item">
+            <a href="#" class="download__link">
+              <div class="download__img">
+                <svg class="download__icon" width="41" height="50"><use xlink:href="#android-icon"></use></svg>
+              </div>
+              <div class="download__text">
+                <h3 class="download__header">Download</h3>
+                <p class="download__descr">Download from play store</p>
+              </div>
             </a>
-          </div>
-
-          <div class="col-md-4">
-            <a href="#" class="item">
-              <h2>Download</h2>
-              <span>Download from microsoft store</span>
-              <i class="fab fa-windows"></i>
+          </li>
+          <li class="download__item">
+            <a href="#" class="download__link">
+              <div class="download__img">
+                <svg class="download__icon" width="41" height="50"><use xlink:href="#windows-icon"></use></svg>
+              </div>
+              <div class="download__text">
+                <h3 class="download__header">Download</h3>
+                <p class="download__descr">Download from microsoft store</p>
+              </div>
             </a>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
-
-    <footer>
-      <a href="#" class="fab fa-facebook-f"></a>
-      <a href="#" class="fab fa-twitter"></a>
-      <a href="#" class="fab fa-dribbble"></a>
-      <a href="#" class="fab fa-behance"></a>
-      <p>Copyright © 2017 | UXSEVEN - a sister concern of codepixar.com</p>
+    <footer class="footer">
+      <div class="footer__wrap">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <svg class="footer__icon" width="17" height="17"><use xlink:href="#fb-icon"></use></svg>
+              Facebook
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <svg class="footer__icon" width="17" height="17"><use xlink:href="#twi-icon"></use></svg>
+              Twitter
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <svg class="footer__icon" width="16" height="16"><use xlink:href="#dribble-icon"></use></svg>
+              Dribble
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <svg class="footer__icon" width="22" height="22"><use xlink:href="#be-icon"></use></svg>
+              Behance
+            </a>
+          </li>
+        </ul>
+        <p class="footer__copy">Copyright © 2017  |  UXSEVEN - a sister concern of codepixar.com</p>
+      </div>
     </footer>
-
-    <!-- waterwheel carousel -->
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <script src="js/jquery.waterwheelCarousel.min.js"></script>
-    <!-- slick slider -->
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="slick/slick.min.js"></script>
+    <button class="up-btn up-btn--active btn" id="up-btn">
+      Up
+      <svg class="btn__icon" width="7" height="15"><use xlink:href="#arrow-up"></use></svg>
+    </button>
+    <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.waterwheelCarousel.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
     <script src="js/main.js"></script>
-    
   </body>
 </html>
